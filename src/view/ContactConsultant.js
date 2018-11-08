@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import Header from './Header'
+import Header from './Header';
+import { Link } from 'react-router-dom';
 
 
 // const Consultant = ({ consultantInfo }) => {
@@ -69,7 +70,7 @@ class ContactConsultant extends Component {
 
                           </fieldset>
                           <div className="form-group">
-                          <button type="button" class="btn btn-danger">Realizar pedido</button>
+                            <button type="button" class="btn btn-danger"><Link to="/savelist"> Realizar pedido </Link></button>
                           </div>
                         </form>
                       </div>

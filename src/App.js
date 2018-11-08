@@ -6,6 +6,7 @@ import Esika from './view/Esika';
 import LBel from './view/LBel';
 import Cyzone from './view/Cyzone';
 import ShopList from './view/ShopList';
+import SaveList from './view/SaveList';
 import ContactConsultant from './view/ContactConsultant';
 import * as Data from './data/data.json';
 
@@ -109,6 +110,11 @@ class App extends Component {
             path='/contact-a-consultant'
             exact
             render={() => <ContactConsultant itemsCount={this.state.orderList.length} />}
+          />
+          <Route
+            path='/savelist'
+            exact
+            render={() => <SaveList />}
           />
         </Switch>
       </Router>
