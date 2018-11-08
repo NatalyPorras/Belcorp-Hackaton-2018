@@ -2,13 +2,13 @@
 {
   "cyzone": {
     "id": 0,
-    "cover": "",
+    "cover": "https://user-images.githubusercontent.com/38477300/48175076-852e0880-e2d8-11e8-88e5-8e3d5919168c.jpg",
     "catalogue": [
       {
         "index": "c01",
         "id": "c0",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -25,7 +25,7 @@
         "index": "c02",
         "id": "c1",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -42,7 +42,7 @@
         "index": "c03",
         "id": "c2",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -59,7 +59,7 @@
         "index": "c04",
         "id": "c3",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -76,7 +76,7 @@
         "index": "c05",
         "id": "c4",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -93,13 +93,13 @@
   },
   "lbel": {
     "id": 0,
-    "cover": "",
+    "cover": "https://user-images.githubusercontent.com/38477300/48175121-bad2f180-e2d8-11e8-8ef2-ffca324d021b.jpg",
     "catalogue": [
       {
         "index": "l01",
         "id": "l0",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -116,7 +116,7 @@
         "index": "l02",
         "id": "l1",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -133,7 +133,7 @@
         "index": "l03",
         "id": "l2",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -150,7 +150,7 @@
         "index": "l04",
         "id": "l3",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -167,7 +167,7 @@
         "index": "l05",
         "id": "l4",
         "image": "",
-        "links": {
+        "products": {
           "href": "",
           "title": "",
           "style": {
@@ -184,13 +184,13 @@
   },
   "esika": {
     "id": 0,
-    "cover": "https://user-images.githubusercontent.com/38477300/48163754-83e7e600-e2ae-11e8-91cf-f05a5d7f0301.jpg",
+    "cover": "https://user-images.githubusercontent.com/38477300/48175186-fec5f680-e2d8-11e8-8d06-ae385bffd938.jpg",
     "catalogue": [
       {
         "index": "0",
         "id": "e0",
         "image": "https://user-images.githubusercontent.com/38477300/48163751-834f4f80-e2ae-11e8-9fc7-8ae6bd2546d8.jpg",
-        "links": [
+        "products": [
           {
             "href": "",
             "title": "",
@@ -200,8 +200,13 @@
               "top": "33.08%",
               "width": "8.86%",
               "height": "8.86%",
-              "zindex": 2
-            }
+              "z-index": 2
+            },
+            "name": "labial hidracolor mate",
+            "image": "https://http2.mlstatic.com/labiales-mate-esika-D_NQ_NP_612234-MPE27709436011_072018-F.jpg",
+            "webPrice": "S/ 35.90",
+            "consultantPrice": "S/ 30.90",
+            "regularPrice": "S/ 45.00"
           },
           {
             "href": "",
@@ -213,7 +218,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "perfume inspira",
+            "image": "https://tiendastreborstore.com/eshops/wp-content/uploads/2017/07/esika-fragancia-inspira-pack.jpg",
+            "webPrice": "S/ 104.90",
+            "consultantPrice": "S/ 89.90",
+            "regularPrice": "S/ 132.00"
           },
           {
             "href": "",
@@ -225,7 +235,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "máscara hd divina",
+            "image": "",
+            "webPrice": "S/ 35.90",
+            "consultantPrice": "S/ 30.90",
+            "regularPrice": "S/ 46.00"
           }
         ]
       },
@@ -233,7 +248,7 @@
         "index": "1",
         "id": "e1",
         "image": "https://user-images.githubusercontent.com/38477300/48163752-83e7e600-e2ae-11e8-981c-546ac292a692.jpg",
-        "links": [
+        "products": [
           {
             "href": "",
             "title": "",
@@ -244,7 +259,12 @@
               "width": "8.88%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "doceteto de sombras hd mineral nude",
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/doceto_de_sombras_hd_mineral_nude1_1800x1800.jpg?v=1539268415",
+            "webPrice": "S/ 54.90",
+            "consultantPrice": "S/ 55.90",
+            "regularPrice": "S/ 85.00"
           },
           {
             "href": "",
@@ -256,7 +276,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "doceteto de sombras hd color bold",
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/200092348_productPicture_prodGallery_superZoom_1800x1800.jpg?v=1539268415",
+            "webPrice": "S/ 54.90",
+            "consultantPrice": "S/ 55.90",
+            "regularPrice": "S/ 85.00"
           },
           {
             "href": "",
@@ -268,7 +293,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "brocha para ojos",
+            "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/hc0/he3/8910541094942/210086023_productCategoryImage_prodCategory_product",
+            "webPrice": "S/ 28.00",
+            "consultantPrice": "S/ 17.90",
+            "regularPrice": "S/ 28.00"
           },
           {
             "href": "",
@@ -280,7 +310,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "doceteto de sombras hd chic nude",
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/doceto_de_sombras_hd_chic_nude_1800x1800.jpg?v=1539268415",
+            "webPrice": "S/ 54.90",
+            "consultantPrice": "S/ 55.90",
+            "regularPrice": "S/ 85.00"
           }
         ]
       },
@@ -288,7 +323,7 @@
         "index": "2",
         "id": "e2",
         "image": "https://user-images.githubusercontent.com/38477300/48163753-83e7e600-e2ae-11e8-8a27-d6055f050515.jpg",
-        "links": [
+        "products": [
           {
             "href": "",
             "title": "",
@@ -299,7 +334,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -311,7 +351,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -323,7 +368,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -335,7 +385,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -347,7 +402,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
         ]
       },
@@ -355,7 +415,7 @@
         "index": "3",
         "id": "e3",
         "image": "https://user-images.githubusercontent.com/38477300/48168192-5a35bb80-e2bc-11e8-9159-b94bbf218cad.jpg",
-        "links": [
+        "products": [
           {
             "href": "",
             "title": "",
@@ -366,7 +426,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -378,7 +443,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -390,7 +460,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
         ]
       },
@@ -398,7 +473,7 @@
         "index": "4",
         "id": "e4",
         "image": "https://user-images.githubusercontent.com/38477300/48168193-5a35bb80-e2bc-11e8-9737-e9e90fb7f336.jpg",
-        "links": [
+        "products": [
           {
             "href": "",
             "title": "",
@@ -409,7 +484,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           },
           {
             "href": "",
@@ -421,7 +501,12 @@
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
-            }
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
         ]
       }
