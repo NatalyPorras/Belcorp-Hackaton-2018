@@ -1,6 +1,11 @@
 import React, { Component, Fragment } from 'react';
 import Header from './Header'
 
+
+const Consultant = ({ consultantInfo }) => {
+  console.log(consultantInfo)
+}
+
 class ContactConsultant extends Component {
 
   constructor(props) {
@@ -15,6 +20,13 @@ class ContactConsultant extends Component {
       ]
     }
   }
+
+  handleChange = ({ target: { value }}) => {
+    this.setState({
+      consultantCode: value,
+    })
+  }
+
 
   render() {
     return (
@@ -33,14 +45,27 @@ class ContactConsultant extends Component {
               </div>
               <p><b>Si ya tienes una consultora:</b></p>
               <div className="form-group">
-                <input type="number" className="form-control" id="exampleFormControlInput1" placeholder="Ingresa su código aquí" />
+                <input onChange={this.handleChange} type="number" className="form-control" id="exampleFormControlInput1" placeholder="Ingresa su código aquí" />
+              </div>
+              <div>
+                {
+                  this.state.consultantCode === "123456"
+                  ? (
+                    <div>
+                      <p>{this.state.consultants[0].name}</p>
+                      <p>{this.state.consultants[0].phoneNumber}</p>
+                      <p>{this.state.consultants[0].email}</p>
+                    </div>
+                  ) 
+                  : null
+                }
               </div>
               <div className="form-group">
 
                 <div className="checkbox">
-                  
+
                   <label data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                  <b>O si aún no tienes una, búscala por:</b>
+                    <b>O si aún no tienes una, búscala por:</b>
                   </label>
                   <p><input type="checkbox" /> Ubicación</p>
                 </div>
@@ -50,6 +75,7 @@ class ContactConsultant extends Component {
 
                 </div>
               </div>
+
             </form>
           </div>
 
