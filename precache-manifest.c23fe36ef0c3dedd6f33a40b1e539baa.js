@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "a7f39bde8709669fc9e9577665f41b7a",
-    "url": "/Belcorp-Hackaton-2018/static/media/lbelLogo.a7f39bde.PNG"
+    "revision": "6421205e809312afae93aede8a5ac72d",
+    "url": "/Belcorp-Hackaton-2018/static/media/cyzoneLogo.6421205e.PNG"
   },
   {
-    "revision": "62fdb85ee99fd9a9b2c1",
-    "url": "/Belcorp-Hackaton-2018/static/css/main.2a1e2d24.chunk.css"
+    "revision": "357255b614f3908623d8",
+    "url": "/Belcorp-Hackaton-2018/static/css/main.4e91b44e.chunk.css"
   },
   {
-    "revision": "df379eb055f949467083",
-    "url": "/Belcorp-Hackaton-2018/static/js/1.df379eb0.chunk.js"
+    "revision": "da0274da37e75a16587a",
+    "url": "/Belcorp-Hackaton-2018/static/js/1.da0274da.chunk.js"
   },
   {
     "revision": "081d556f831a83c7cd3e",
@@ -20,12 +20,12 @@ self.__precacheManifest = [
     "url": "/Belcorp-Hackaton-2018/static/media/esikaLogo.795396cc.PNG"
   },
   {
-    "revision": "62fdb85ee99fd9a9b2c1",
-    "url": "/Belcorp-Hackaton-2018/static/js/main.62fdb85e.chunk.js"
+    "revision": "a7f39bde8709669fc9e9577665f41b7a",
+    "url": "/Belcorp-Hackaton-2018/static/media/lbelLogo.a7f39bde.PNG"
   },
   {
-    "revision": "6421205e809312afae93aede8a5ac72d",
-    "url": "/Belcorp-Hackaton-2018/static/media/cyzoneLogo.6421205e.PNG"
+    "revision": "357255b614f3908623d8",
+    "url": "/Belcorp-Hackaton-2018/static/js/main.357255b6.chunk.js"
   },
   {
     "revision": "1b19ea765c186a56ffceb76d52428d81",
@@ -36,11 +36,15 @@ self.__precacheManifest = [
     "url": "/Belcorp-Hackaton-2018/static/media/Captura.b4d30698.JPG"
   },
   {
+    "revision": "c11628a8825edfb3c8ae3368d9cf1130",
+    "url": "/Belcorp-Hackaton-2018/static/media/brocha-polvos-maquillaje.c11628a8.jpg"
+  },
+  {
     "revision": "4f4611e86b7223529c4ab5e8fd24422b",
     "url": "/Belcorp-Hackaton-2018/static/media/brocha.4f4611e8.jpg"
   },
   {
-    "revision": "776c2df09b86b4a35746b9c828ca0d42",
+    "revision": "7cf95a452eec7ee2140b18bba6b09a82",
     "url": "/Belcorp-Hackaton-2018/index.html"
   }
 ];
