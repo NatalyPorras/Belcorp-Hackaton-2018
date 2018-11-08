@@ -1,4 +1,7 @@
-  
+img{
+    width: 300px;
+    height: 400px;
+}  
   #app {
     width: 400px;
     position: absolute;

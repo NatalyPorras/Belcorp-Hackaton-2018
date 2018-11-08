@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import {Home} from './view/Home';
+import Home from './view/Home';
 import Esika from './view/Esika';
 import LBel from './view/LBel';
 import Cyzone from './view/Cyzone';
@@ -33,7 +33,7 @@ class App extends Component {
             path='/esika'
             exact
             render={() => <Esika data={esika} />}
-          />
+          />  
           <Route
             path='/lbel'
             exact
