@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 import Logo from '../assets/img/Logo.PNG';
-
+import './Header.css'
 
 const Header = () =>{
     return (
@@ -16,6 +16,12 @@ const Header = () =>{
           </li>
           <li className="nav-item">
             <Link to="/lbel" className="nav-link">Lbel</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/cyzone" className="nav-link">Cyzone</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/shopList" className="nav-link">Bolsa</Link>
           </li>
 
         </ul>
