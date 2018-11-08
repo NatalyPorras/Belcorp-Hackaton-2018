@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import { Link } from 'react-router-dom'
-import Logo from '../assets/img/Logo.PNG';
-import './Esika.css';
+
 import Header from './Header'
+import './Esika.css';
+
 class Esika extends Component {
   constructor(props) {
     super(props);
@@ -68,20 +68,24 @@ class Esika extends Component {
                           </button>
                         </div>
                         <div className="modal-body">
-                          <img src={obj.image} />
+                          <img src={obj.image} className="" />
                           {/* <i className="fas fa-minus border p-2" onClick={()=>this.props.reduceCount(obj.id)}></i>
                         <span className="p-2">{obj.count}</span>
                         <i className="fas fa-plus border p-2" onClick={() => this.props.addCount(obj.id)}></i> */}
                         </div>
                         <div className="modal-footer">
                           <button
+                            data-dismiss="modal"
+                            aria-label="Close"
                             type="button"
                             className="btn btn-dark"
                             onClick={() => this.props.addItem({
                               title: obj.name,
                               img: obj.image,
                               webPrice: obj.webPrice,
-                              consultantPrice: obj.consultantPrice
+                              consultantPrice: obj.consultantPrice,
+                              count: obj.count,
+                              id: obj.name
                             })}>Agregar a Bolsa</button>
                         </div>
                       </div>
