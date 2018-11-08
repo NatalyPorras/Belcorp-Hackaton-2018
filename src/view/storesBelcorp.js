@@ -69,7 +69,6 @@ handleClickMessage = () =>{
                     <div>
                         <img src={Mapa} style={{width:"400px",height:"400px"}} />
                     </div>
-
                     <div className="primeraTienda">
                         <h3>ESIKA REAL PLAZA PRIMAVERA</h3>
                         <p>Av. Angamos Este 2681, San Borja 15036</p>
