@@ -3,7 +3,7 @@ import React,{Component} from 'react';
 class Cyzone extends Component{
     constructor(){
         super();
-        this.state ={
+        this.state = {
             image:[],
             activeIndex : 1,
             left:0
