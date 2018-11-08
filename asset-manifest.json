@@ -1,7 +1,7 @@
 {
   "main.css": "/Belcorp-Hackaton-2018/static/css/main.85710060.chunk.css",
-  "main.js": "/Belcorp-Hackaton-2018/static/js/main.0d1716cd.chunk.js",
-  "main.js.map": "/Belcorp-Hackaton-2018/static/js/main.0d1716cd.chunk.js.map",
+  "main.js": "/Belcorp-Hackaton-2018/static/js/main.8c4755f3.chunk.js",
+  "main.js.map": "/Belcorp-Hackaton-2018/static/js/main.8c4755f3.chunk.js.map",
   "static/js/1.be619009.chunk.js": "/Belcorp-Hackaton-2018/static/js/1.be619009.chunk.js",
   "static/js/1.be619009.chunk.js.map": "/Belcorp-Hackaton-2018/static/js/1.be619009.chunk.js.map",
   "runtime~main.js": "/Belcorp-Hackaton-2018/static/js/runtime~main.081d556f.js",
@@ -13,6 +13,6 @@
   "static/media/lbelLogo.PNG": "/Belcorp-Hackaton-2018/static/media/lbelLogo.a7f39bde.PNG",
   "static/css/main.85710060.chunk.css.map": "/Belcorp-Hackaton-2018/static/css/main.85710060.chunk.css.map",
   "index.html": "/Belcorp-Hackaton-2018/index.html",
-  "precache-manifest.1f4824c0fe7f65cd864b228777559743.js": "/Belcorp-Hackaton-2018/precache-manifest.1f4824c0fe7f65cd864b228777559743.js",
+  "precache-manifest.dc6eeaa0b357d3abb1f58d65cf58d9ee.js": "/Belcorp-Hackaton-2018/precache-manifest.dc6eeaa0b357d3abb1f58d65cf58d9ee.js",
   "service-worker.js": "/Belcorp-Hackaton-2018/service-worker.js"
 }
