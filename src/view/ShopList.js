@@ -1,7 +1,12 @@
 import React, { Fragment } from 'react';
-import Header from './Header'
+import Header from './Header';
+import { Link } from 'react-router-dom'
 
+const handleStoresBelcorp = () =>{
+  return(<Link to="/storesBelcorp" className="nav-link active" />)
+}
 const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
+ 
   return (
     <Fragment className="container" >
       <Header />
@@ -40,7 +45,7 @@ const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
         <div className="row">
           <button className="col-md-4 m-4 shadow btn btn-dark">Compra online</button>
           <button className="col-md-4 m-4 shadow btn btn-danger">Conectar consultora</button>
-          <button className="col-md-4 m-4 shadow btn btn-outline-dark">Buscar en tienda</button>
+          <button className="col-md-4 m-4 shadow btn btn-outline-dark" onClick={handleStoresBelcorp()}>Buscar en tienda</button>
         </div>
       </div>
     </Fragment>
