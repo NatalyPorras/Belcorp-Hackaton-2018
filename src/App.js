@@ -6,6 +6,7 @@ import Esika from './view/Esika';
 import LBel from './view/LBel';
 import Cyzone from './view/Cyzone';
 import ShopList from './view/ShopList';
+import StoresBelcorp from './view/storesBelcorp';
 import * as Data from './data/data.json';
 
 class App extends Component {
@@ -103,6 +104,11 @@ class App extends Component {
             path='/shoplist'
             exact
             render={() => <ShopList orderList={this.state.orderList} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} removeItem={this.removeItem} total={this.state.total} />}
+          />
+           <Route
+            path='/storesBelcorp'
+            exact
+            render={() => <StoresBelcorp />}
           />
         </Switch>
       </Router>

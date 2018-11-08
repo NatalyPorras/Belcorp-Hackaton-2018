@@ -13,14 +13,18 @@
   }
   
   .slider img{
-      width: 100%;
+      width: auto;
       height: 500px;
       margin: 3% 0;
   }
   
+  .slider {
+    position: relative;
+  }
+
   .slider-item, .hide {
     float: left;
-    position: relative;
+    /* position: relative; */
     text-transform: uppercase;
     color: #fff;
     line-height: 250px;
