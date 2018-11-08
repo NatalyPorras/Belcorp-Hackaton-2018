@@ -12,9 +12,9 @@ const ShopList = ({ orderList }) => {
     <div className="">
       <h3>Bolsa de compra</h3>
       {
-        orderList.map(({ title, consultanPrice, wedPrice, count }) =>
+        orderList.map(({ title, consultanPrice, wedPrice, count, img }) =>
           <div className="media p-3 border">
-            <img className="align-self-center mr-3" src="" />
+            <img className="align-self-center mr-3" src={img} />
             <div className="media-body">
               <h5>{title}</h5>
               <div className="d-flex flex-direction-column">
