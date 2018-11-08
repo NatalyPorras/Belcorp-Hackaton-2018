@@ -1,7 +1,7 @@
 import React, {Component, Fragment } from 'react';
 import Header from './Header';
 import StoresBelcorp from  './storesBelcorp';
-// import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // import Stores from './storesBelcorp';
  
 class ShopList extends Component {
