@@ -149,7 +149,8 @@
             "image": "https://static.comunicae.com.mx/photos/notas/117133/117133-1504088362670.jpg",
             "webPrice": "S/ 98.00",
             "consultantPrice": "S/ 98.00",
-            "regularPrice": "S/ 123.00"
+            "regularPrice": "S/ 123.00",
+            "count": 1
           },
           {
             "href": "",
@@ -166,7 +167,8 @@
             "image": "https://bellezacheck.com/wp-content/uploads/0000279054008.jpg",
             "webPrice": "S/ 51.00",
             "consultantPrice": "S/ 51.00",
-            "regularPrice": "S/ 64.00"
+            "regularPrice": "S/ 64.00",
+            "count": 1
           }
         ] 
       },
@@ -190,7 +192,8 @@
             "image": "http://cosmeticosonline.co/wp-content/uploads/2017/10/Perfume-Mithyka.jpg",
             "webPrice": "S/ 98.00",
             "consultantPrice": "S/ 98.00",
-            "regularPrice": "S/ 150.00"
+            "regularPrice": "S/ 150.00",
+            "count": 1
           },
           {
             "href": "",
@@ -207,7 +210,8 @@
             "image": "",
             "webPrice": "S/ 41.00",
             "consultantPrice": "S/ 33.00",
-            "regularPrice": "S/ 64.00"
+            "regularPrice": "S/ 64.00",
+            "count": 1
           }
         ] 
       },
