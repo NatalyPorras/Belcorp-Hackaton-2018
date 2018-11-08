@@ -13,37 +13,63 @@ class App extends Component {
     super(props);
     this.state = {
       brands: {},
-      orderList: []
+      orderList: [],
+      total: 0.00
     }
   }
 
-  addItem = (item) => this.setState({ orderList: [...this.state.orderList, item] })
+  sumTotalOrder = (arr) => {
+    let sum = 0;
+    arr.forEach(({ webPrice, count }) => {
+      const num = parseFloat(webPrice.split(' ')[1]);
+      sum += num * count
+    });
+    this.setState({ total: sum.toFixed(2) })
+  }
 
-  addCount = (id) => this.setState({
-    orderList: this.state.orderList.map(item => {
+  addCount = (id) => {
+    const { orderList } = this.state;
+    orderList.forEach(item => {
       if (item.id === id) item.count++;
-      return item
     })
-  })
+
+    this.sumTotalOrder(orderList);
+    this.setState({ orderList });
+  }
+
+  addItem = (item) => {
+    const { orderList } = this.state;
+
+    if (orderList.find(({ id }) => id === item.id)) {
+      this.addCount(item.id)
+    } else {
+      orderList.push(item)
+    }
+    this.sumTotalOrder(orderList);
+    this.setState({ orderList });
+  }
 
   removeItem = (index) => {
     const { orderList } = this.state;
     orderList.splice(index, 1);
+    this.sumTotalOrder(orderList);
     this.setState({ orderList });
   }
 
-  reduceCount = (id, index) => this.setState({
-    orderList: this.state.orderList.map(item => {
+  reduceCount = (id, index) => {
+    const { orderList } = this.state;
+    orderList.forEach(item => {
       if (item.id === id) {
         item.count--;
-        if (item.count === 0 && index) {
+        if (item.count === 0) {
           this.removeItem(index)
+          // if (item.count === 0) item.count = 1;
         }
-        if (item.count === 0) item.count = 1;
       }
-      return item
     })
-  })
+    this.sumTotalOrder(orderList);
+    this.setState({ orderList });
+  }
 
   componentWillMount() {
     this.setState({ brands: Data.default })
@@ -61,7 +87,7 @@ class App extends Component {
           <Route
             path='/esika'
             exact
-            render={() => <Esika data={esika} addItem={this.addItem} reduceCount={this.reduceCount} />}
+            render={() => <Esika data={esika} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} />}
           />
           <Route
             path='/lbel'
@@ -76,7 +102,7 @@ class App extends Component {
           <Route
             path='/shoplist'
             exact
-            render={() => <ShopList orderList={this.state.orderList} />}
+            render={() => <ShopList orderList={this.state.orderList} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} removeItem={this.removeItem} total={this.state.total} />}
           />
         </Switch>
       </Router>
