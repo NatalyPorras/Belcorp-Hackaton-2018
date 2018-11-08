@@ -1,7 +1,9 @@
 import React from 'react';
 
-const ShopList = () => {
-
+const ShopList = ({ orderList }) => {
+  return (
+    
+  );
 }
 
-export default ShopList
+export default ShopList;
