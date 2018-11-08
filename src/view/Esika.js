@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import './LBel.css';
+import './Esika.css';
 class Esika extends Component{
     constructor(props){
         super(props);
@@ -50,17 +50,13 @@ class Esika extends Component{
         });
         return(
             <section>
-                <div>
-                    <h3>Catálogo C-17</h3>
-                    <p>Descubre nuestras novedades</p>
-                </div>
                 <div className="slider-wrapper"> 
                     <div className="slider">    
                       <img key={this.state.image} src={this.state.image}/>   
                     </div>
                     {this.state.coordenadas.map((obj,index)=>{
                         return (
-                        <div key={index} style={style(obj.style)}>
+                        <div key={index} style={style(obj.style)} className="contentCoordenadas">
                             <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
 
                             </button>
@@ -68,24 +64,20 @@ class Esika extends Component{
                             <div className="modal-dialog" role="document">
                                 <div className="modal-content">
                                 <div className="modal-header">
-                                    <h5 className="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <h5 className="modal-title" id="exampleModalLabel">{obj.name}</h5>
                                     <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div className="modal-body">
-                                    <span>{obj.name}</span>
                                     <img src={obj.image} />
-                                    <span>{obj.webPrice}</span>
-                                    <span>{obj.consultantPrice}</span>
-                                    <span>{obj.regularPrice}</span>
                                     <button> + </button>
+                                    <span> 1 </span>
                                     <button> - </button>
 
                                 </div>
                                 <div className="modal-footer">
-                                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" className="btn btn-primary">Save changes</button>
+                                    <button type="button" className="btn btn-dark">Agregar a Bolsa</button>
                                 </div>
                                 </div>
                             </div>
