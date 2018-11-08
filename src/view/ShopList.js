@@ -37,7 +37,8 @@ class ShopList extends Component {
             <div className="media-body">
               <h5 className="mt-0">{title}</h5>
               <div className="d-flex flex-direction-column">
-                <p className="border-right m-3 p-3">
+                <p className="border-right m-3 p-3 
+                ">
                   {webPrice}
                   <br />
                   Precio Online
@@ -58,13 +59,13 @@ class ShopList extends Component {
           </div>
         )
       }
-      <div className="bg-light">
+      <div className="bg-light ml-5 mt-5 mb-5">
         <span>Total Online <b className="ml-4">s/ {total}</b></span>
       </div>
       <div className="container">
         <div className="row">
           <button className="col-md-4 m-4 shadow btn btn-dark">Compra online</button>
-          <button className="col-md-4 m-4 shadow btn btn-danger">Conectar consultora</button>
+          <button className="col-md-4 m-4 shadow btn btn-danger">Contactar consultora</button>
           <button className="col-md-4 m-4 shadow btn btn-outline-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
         </div>
       </div>

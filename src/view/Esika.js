@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-
+import Icon from '../assets/icon/icon.png'
 import Header from './Header'
 import './Esika.css';
 
@@ -11,11 +11,9 @@ class Esika extends Component {
       image: props.data.catalogue[0].image,
       coordenadas: props.data.catalogue[0].products
     }
-    console.log(this.state);
   }
 
   nextSlider = () => {
-    console.log(this.state)
     this.setState({
       index: (this.state.index + 1),
       image: this.props.data.catalogue[(this.state.index + 1)].image,
@@ -24,7 +22,6 @@ class Esika extends Component {
   }
 
     prevSlider = () => {
-        // const newIndex = ;
         this.setState({
           index: (this.state.index - 1),
           image: this.props.data.catalogue[(this.state.index - 1)].image,
@@ -44,7 +41,7 @@ class Esika extends Component {
     
         return (
           <Fragment>
-            <Header />
+            <Header itemsCount={this.props.itemsCount} />
             <section>
               <div className="slider-wrapper">
                 <div className="slider">
@@ -55,7 +52,7 @@ class Esika extends Component {
                   return (
                     <div key={index} style={style(obj.style)} className="contentCoordenadas">
                       <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
-    
+
                       </button>
                       <div className="modal fade" id={`exampleModal${index}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog" role="document">
@@ -97,7 +94,7 @@ class Esika extends Component {
               </div >
               <div className="buttons-wrapper">
                 <button className="prev-button" onClick={() => this.prevSlider()} disabled={this.state.index === 0}></button>
-                <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length}></button>
+                <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length-1}></button>
               </div>
             </section >
           </Fragment>
