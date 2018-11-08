@@ -13,7 +13,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "",
               "top": "",
               "width": "8.86%",
@@ -24,7 +24,8 @@
             "image": "",
             "webPrice": "",
             "consultantPrice": "",
-            "regularPrice": ""
+            "regularPrice": "",
+            "count": 1
           }
         ] 
       },
@@ -37,7 +38,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "",
               "top": "",
               "width": "8.86%",
@@ -48,7 +49,8 @@
             "image": "",
             "webPrice": "",
             "consultantPrice": "",
-            "regularPrice": ""
+            "regularPrice": "",
+            "count": 1
           }
         ] 
       },
@@ -61,7 +63,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "",
               "top": "",
               "width": "8.86%",
@@ -72,7 +74,8 @@
             "image": "",
             "webPrice": "",
             "consultantPrice": "",
-            "regularPrice": ""
+            "regularPrice": "",
+            "count": 1
           }
         ] 
       },
@@ -85,7 +88,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "",
               "top": "",
               "width": "8.86%",
@@ -96,7 +99,8 @@
             "image": "",
             "webPrice": "",
             "consultantPrice": "",
-            "regularPrice": ""
+            "regularPrice": "",
+            "count": 1
           }
         ] 
       },
@@ -109,7 +113,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "",
               "top": "",
               "width": "8.86%",
@@ -120,7 +124,8 @@
             "image": "",
             "webPrice": "",
             "consultantPrice": "",
-            "regularPrice": ""
+            "regularPrice": "",
+            "count": 1
           }
         ] 
       }
@@ -139,7 +144,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "73.7%",
               "top": "54.8%",
               "width": "8.86%",
@@ -157,7 +162,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "36.09%",
               "top":"75.6%",
               "width": "8.86%",
@@ -182,7 +187,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "18.64%",
               "top": "54.09%",
               "width": "8.86%",
@@ -200,7 +205,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "75.46%",
               "top": "64.65%",
               "width": "8.86%",
@@ -208,7 +213,7 @@
               "z-index": 2
             },
             "name": "labial dúo amplifiant",
-            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200092915_740x.jpg?v=1539370541",
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200092915_740x.jpg",
             "webPrice": "S/ 41.00",
             "consultantPrice": "S/ 33.00",
             "regularPrice": "S/ 64.00",
@@ -219,24 +224,43 @@
       {
         "index": "l03",
         "id": "l2",
-        "image": "",
+        "image": "https://user-images.githubusercontent.com/38477300/48184315-9d654e00-e2ff-11e8-9f03-4bfe6f3e4ae8.jpg",
         "products": [
           {
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
-              "left": "",
-              "top": "",
+              "position": "absolute",
+              "left": "51.87%",
+              "top": "57.61%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "brises de vie aqua edición 100ml",
+            "image": "http://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200091348_1200x630.jpg?v=1539195183",
+            "webPrice": "S/ 42.90",
+            "consultantPrice": "S/ 40.00",
+            "regularPrice": "S/46.00",
+            "count": 1
+          },
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": "absolute",
+              "left": "81.31%",
+              "top": "68.04%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "brises de vie aqua edición 50ml",
+            "image": "http://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200091348_1200x630.jpg?v=1539195183",
+            "webPrice": "S/ 29.90",
+            "consultantPrice": "S/ 25.00",
+            "regularPrice": "S/ 35.00",
+            "count": 1
           }
         ] 
       },
@@ -249,7 +273,7 @@
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
+              "position": "absolute",
               "left": "",
               "top": "",
               "width": "8.86%",
@@ -260,31 +284,69 @@
             "image": "",
             "webPrice": "",
             "consultantPrice": "",
-            "regularPrice": ""
+            "regularPrice": "",
+            "count": 1
           }
         ] 
       },
       {
-        "index": "l05",
-        "id": "l4",
-        "image": "",
+        "index": "l04",
+        "id": "l3",
+        "image": "https://user-images.githubusercontent.com/38477300/48184316-9d654e00-e2ff-11e8-8427-a9539cf738bf.jpg",
         "products": [
           {
             "href": "",
             "title": "",
             "style": {
-              "position": 0,
-              "left": "",
-              "top": "",
+              "position": "absolute",
+              "left": "27.31%",
+              "top": "69.42%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "suero libertâge nocturne",
+            "image": "https://carlapaolaruiz.com/wp-content/uploads/2014/09/Captura-de-pantalla-2014-09-17-a-las-13.36.34.png",
+            "webPrice": "S/ 105.00",
+            "consultantPrice": "S/ 92.00",
+            "regularPrice": "S/ 132.00",
+            "count": 1
+          },
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": "absolute",
+              "left": "58.28%;",
+              "top": "52.7%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "limpiadora duoeffect libertâge",
+            "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/hd4/h8b/9028029153310/200096670_productCategoryImage_prodCategory_product",
+            "webPrice": "S/ 45.00",
+            "consultantPrice": "S/ 38.00",
+            "regularPrice": "S/ 60.00",
+            "count": 1
+          },
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": "absolute",
+              "left": "77.86%",
+              "top": "71.03%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "nocturne eye repair",
+            "image": "https://http2.mlstatic.com/nocturne-eye-repair-lbel-D_NQ_NP_686023-MLM28284607660_102018-F.jpg",
+            "webPrice": "S/ 58.00",
+            "consultantPrice": "S/ 43.00",
+            "regularPrice": "S/ 90.00",
+            "count": 1
           }
         ] 
       }
@@ -565,8 +627,8 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200091935_1800x1800.jpg?v=1539205533",
+            "name": "renacer advanced crema hidratante",
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200091935_1800x1800.jpg",
             "webPrice": "S/ 32.90",
             "consultantPrice": "S/ 32.90",
             "regularPrice": "S/ 42.00",
