@@ -96,10 +96,9 @@ handleClickMessage = () =>{
                         <p>11:00–22:00</p>
                     </div>
                     
-                    <h5>Envia una copia de tu pedido a:</h5>
+                    <h5>Puedes enviar una copia de tu pedido a:</h5>
 
                     <div className="form-group">
-                        <label htmlFor="exampleFormControlInput1">Email address</label>
                         <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" value={this.state.input} onChange={this.handleInputEmail}/>
                         <button type="button" className="btn btn-outline-dark" onClick={this.handleClickMessage}>Enviar</button>
                     </div>

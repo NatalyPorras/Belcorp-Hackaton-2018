@@ -65,7 +65,7 @@ class ShopList extends Component {
       <div className="container">
         <div className="row">
           <button className="col-md-4 m-4 shadow btn btn-dark">Compra online</button>
-          <button className="col-md-4 m-4 shadow btn btn-danger">Conectar consultora</button>
+          <button className="col-md-4 m-4 shadow btn btn-danger">Contactar consultora</button>
           <button className="col-md-4 m-4 shadow btn btn-outline-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
         </div>
       </div>

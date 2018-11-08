@@ -96,7 +96,7 @@ class App extends Component {
             render={() => <LBel data={lbel} addItem={this.addItem} itemsCount={this.state.orderList.length} />}
           />
           <Route
-            path='/cyzone'
+            path='Belcorp-Hackaton-2018/cyzone'
             exact
             render={() => <Cyzone data={cyzone} itemsCount={this.state.orderList.length} />}
           />
