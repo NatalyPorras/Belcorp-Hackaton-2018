@@ -1,49 +1,55 @@
 import React, { Component } from 'react';
 import Mapa from '../assets/img/Captura.JPG'
 class Stores extends Component {
-    
+    constructor(){
+        super();
+
+    }
   handleInputEmail(){
 
 }
-componentDidMount(){
-    fetch("https://mandrillapp.com/api/1.0/messages/send.json")
-    .then(response=>{
-        console.log(response);
+// componentDidMount(){
+//     fetch("https://mandrillapp.com/api/1.0/messages/send.json")
+//     .then(response=>{
+//         console.log(response);
         
-    })
-}
-// handleClickMessage = () =>{
-//   $.ajax({
-//     type: "POST",
-//     url: "https://mandrillapp.com/api/1.0/messages/send.json"   ,
-//     data: {
-//       'key': 'ZGiSDAUGJIgaCMIqm9ysPA',
-//       'message': {
-//         "html": "<p>Example HTML content</p>",
-//         "text": "Example text content",
-//         "subject": "example subject",
-//         'from_email': 'nat@laboratoria.la',
-//         'to': [
-//           {
-//             'email': 'natalypc27@gmail.com ',
-//             'name': 'Nataly Porras',
-//             'type': 'to'
-//           }
-//         ],
-//         "images": [
-//           {
-//               "type": "image/png",
-//               "name": "IMAGECID",
-//               "content": "ZXhhbXBsZSBmaWxl"
-//           }
-//       ],
-//         'subject': 'title',
-//         'html': 'html can be used'
-
-//       }
-//     }
-//   });
+//     })
 // }
+handleClickMessage = () =>{
+  window.$.ajax({
+    type: "POST",
+    url: "https://mandrillapp.com/api/1.0/messages/send.json",
+    data: {
+      'key': 'ZGiSDAUGJIgaCMIqm9ysPA',
+      'message': {
+        "html": "<p>Example HTML content</p>",
+        "text": "Example text content",
+        "subject": "example subject",
+        'from_email': 'nat@laboratoria.la',
+        'to': [
+          {
+            'email': 'natalypc27@gmail.com ',
+            'name': 'Nataly Porras',
+            'type': 'to'
+          }
+        ],
+        "images": [
+          {
+              "type": "image/png",
+              "name": "IMAGECID",
+              "content": "ZXhhbXBsZSBmaWxl"
+          }
+      ],
+        'subject': 'Lista de Pedidos',
+        'html': '<h2>Hola Nataly</h2>',
+        'html': 'Te enviamos una lista con los productos que seleccionase para la compra.   ',
+        'html': '<ul><ol>Revisa el detalle de tu compra.</ol><ol>Finalizala ingresando al enlace de ecommerce que te enviamos</ol></ul>'
+
+
+      }
+    }
+  });
+}
     render(){
         return(
             <section>  
@@ -60,7 +66,7 @@ componentDidMount(){
                         </select>
                     </div>
                     <div>
-                        <img src={Mapa} />
+                        <img src={Mapa} style={{width:"400px",height:"400px"}} />
                     </div>
 
                     <div>
@@ -82,7 +88,7 @@ componentDidMount(){
                     </div>
                     <hr />
                     <div>
-                        <h3>ESIKAJOCKEY PLAZA</h3>
+                        <h3>ESIKA JOCKEY PLAZA</h3>
                         <p>Av. Javier Prado Este 4200, Santiago de Surco de Lima, LIMA 15023</p>
                         <p>Teléfono: (01) 6223001</p>
                         <p>Horario de Atención</p>
@@ -90,7 +96,8 @@ componentDidMount(){
                         <p>11:00–22:00</p>
                     </div>
                     
-                    <h4>Envia una copia de tu pedido a:</h4>
+                    <h5>Envia una copia de tu pedido a:</h5>
+
                     <div className="form-group">
                         <label htmlFor="exampleFormControlInput1">Email address</label>
                         <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
