@@ -17,9 +17,9 @@ class App extends Component {
     }
   }
 
-  handleOrderList = (item) => this.setState({ orderList: [...this.state.orderList, item] })
+  addItem = (item) => this.setState({ orderList: [...this.state.orderList, item] })
 
-  addItem = (id) => this.setState({
+  addCount = (id) => this.setState({
     orderList: this.state.orderList.map(item => {
       if (item.id === id) item.count++;
       return item
@@ -56,8 +56,8 @@ class App extends Component {
           <Route
             path='/esika'
             exact
-            render={() => <Esika data={esika} />}
-          />  
+            render={() => <Esika data={esika} addItem={this.addItem} addCount={this.addCount} reduceCount={this.reduceCount} />}
+          />
           <Route
             path='/lbel'
             exact
