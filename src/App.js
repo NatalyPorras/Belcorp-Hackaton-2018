@@ -86,27 +86,27 @@ class App extends Component {
             render={() => <Home data={this.state.brands} />}
           />
           <Route
-            path='/esika'
+            path='/Belcorp-Hackaton-2018/esika'
             exact
             render={() => <Esika data={esika} addItem={this.addItem} itemsCount={this.state.orderList.length} />}
           />
           <Route
-            path='/lbel'
+            path='/Belcorp-Hackaton-2018/lbel'
             exact
             render={() => <LBel data={lbel} addItem={this.addItem} itemsCount={this.state.orderList.length} />}
           />
           <Route
-            path='/cyzone'
+            path='/Belcorp-Hackaton-2018/cyzone'
             exact
             render={() => <Cyzone data={cyzone} itemsCount={this.state.orderList.length} />}
           />
           <Route
-            path='/shoplist'
+            path='/Belcorp-Hackaton-2018/shoplist'
             exact
             render={() => <ShopList orderList={this.state.orderList} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} removeItem={this.removeItem} total={this.state.total} />}
           />
           <Route
-            path='/contact-a-consultant'
+            path='/Belcorp-Hackaton-2018/contact-a-consultant'
             exact
             render={() => <ContactConsultant itemsCount={this.state.orderList.length} />}
           />
