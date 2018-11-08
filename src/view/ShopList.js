@@ -37,7 +37,8 @@ class ShopList extends Component {
             <div className="media-body">
               <h5 className="mt-0">{title}</h5>
               <div className="d-flex flex-direction-column">
-                <p className="border-right m-3 p-3">
+                <p className="border-right m-3 p-3 
+                ">
                   {webPrice}
                   <br />
                   Precio Online
@@ -58,7 +59,7 @@ class ShopList extends Component {
           </div>
         )
       }
-      <div className="bg-light">
+      <div className="bg-light ml-5 mt-5 mb-5">
         <span>Total Online <b className="ml-4">s/ {total}</b></span>
       </div>
       <div className="container">

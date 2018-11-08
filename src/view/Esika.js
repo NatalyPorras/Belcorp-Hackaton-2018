@@ -11,11 +11,9 @@ class Esika extends Component {
       image: props.data.catalogue[0].image,
       coordenadas: props.data.catalogue[0].products
     }
-    console.log(this.state);
   }
 
   nextSlider = () => {
-    console.log(this.state)
     this.setState({
       index: (this.state.index + 1),
       image: this.props.data.catalogue[(this.state.index + 1)].image,
@@ -24,7 +22,6 @@ class Esika extends Component {
   }
 
     prevSlider = () => {
-        // const newIndex = ;
         this.setState({
           index: (this.state.index - 1),
           image: this.props.data.catalogue[(this.state.index - 1)].image,
@@ -97,7 +94,7 @@ class Esika extends Component {
               </div >
               <div className="buttons-wrapper">
                 <button className="prev-button" onClick={() => this.prevSlider()} disabled={this.state.index === 0}></button>
-                <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length}></button>
+                <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length-1}></button>
               </div>
             </section >
           </Fragment>
