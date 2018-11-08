@@ -33,7 +33,7 @@ class App extends Component {
             path='/esika'
             exact
             render={() => <Esika data={esika} />}
-          />
+          />  
           <Route
             path='/lbel'
             exact

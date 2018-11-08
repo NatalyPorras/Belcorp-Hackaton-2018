@@ -1,3 +1,4 @@
+
 {
   "cyzone": {
     "id": 0,
@@ -294,7 +295,7 @@
     "cover": "https://user-images.githubusercontent.com/38477300/48175186-fec5f680-e2d8-11e8-8d06-ae385bffd938.jpg",
     "catalogue": [
       {
-        "index": "e01",
+        "index": "0",
         "id": "e0",
         "image": "https://user-images.githubusercontent.com/38477300/48163751-834f4f80-e2ae-11e8-9fc7-8ae6bd2546d8.jpg",
         "products": [
@@ -303,8 +304,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "13.18%",
-              "top": "33.08%",
+              "left": "31.18%",
+              "top": "53.08%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -321,8 +322,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "71.76%",
-              "top": "49.56%",
+              "left": "56.76%",
+              "top": "57.56%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -339,8 +340,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "23.92%",
-              "top": "73.23%",
+              "left": "55.92%",
+              "top": "78%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -355,7 +356,7 @@
         ]
       },
       {
-        "index": "e02",
+        "index": "1",
         "id": "e1",
         "image": "https://user-images.githubusercontent.com/38477300/48163752-83e7e600-e2ae-11e8-981c-546ac292a692.jpg",
         "products": [
@@ -364,8 +365,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "48.87%",
-              "top": "15.29%",
+              "left": "45.87%",
+              "top": "40.29%",
               "width": "8.88%",
               "height": "8.86%",
               "z-index": 2
@@ -382,8 +383,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "20.14%",
-              "top": "48.75%",
+              "left": "42.14%",
+              "top": "55.75%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -400,7 +401,7 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "3.75%",
+              "left": "26.75%",
               "top": "54.06%",
               "width": "8.86%",
               "height": "8.86%",
@@ -418,8 +419,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "21.15%",
-              "top": "67.97%",
+              "left": "41.15%",
+              "top": "72.97%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -434,7 +435,7 @@
         ]
       },
       {
-        "index": "e03",
+        "index": "2",
         "id": "e2",
         "image": "https://user-images.githubusercontent.com/38477300/48163753-83e7e600-e2ae-11e8-8a27-d6055f050515.jpg",
         "products": [
@@ -443,8 +444,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "55.64%",
-              "top": "22.74%",
+              "left": "63.64%",
+              "top": "29.74%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -461,8 +462,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "20.95%",
-              "top": "47.57%",
+              "left": "39.95%",
+              "top": "60.57%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -479,8 +480,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "41.1%",
-              "top": "54.03%",
+              "left": "51.1%",
+              "top": "64.03%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -498,7 +499,7 @@
             "style": {
               "position": "absolute",
               "left": "63.21%",
-              "top": "44.76%",
+              "top": "60.76%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -515,7 +516,7 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "26.28%",
+              "left": "36.28%",
               "top": "77.59%",
               "width": "8.86%",
               "height": "8.86%",
@@ -531,7 +532,7 @@
         ]
       },
       {
-        "index": "e04",
+        "index": "3",
         "id": "e3",
         "image": "https://user-images.githubusercontent.com/38477300/48168192-5a35bb80-e2bc-11e8-9159-b94bbf218cad.jpg",
         "products": [
@@ -592,7 +593,7 @@
         ]
       },
       {
-        "index": "e05",
+        "index": "4",
         "id": "e4",
         "image": "https://user-images.githubusercontent.com/38477300/48168193-5a35bb80-e2bc-11e8-9737-e9e90fb7f336.jpg",
         "products": [
@@ -601,8 +602,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "82.6%",
-              "top": "20.2%",
+              "left": "65.6%",
+              "top": "53.2%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
@@ -619,8 +620,8 @@
             "title": "",
             "style": {
               "position": "absolute",
-              "left": "54.76%",
-              "top": "49.56%",
+              "left": "75.76%",
+              "top": "70.56%",
               "width": "8.86%",
               "height": "8.86%",
               "z-index": 2
