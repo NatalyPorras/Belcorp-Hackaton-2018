@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-
+import Icon from '../assets/icon/icon.png'
 import Header from './Header'
 import './Esika.css';
 
@@ -52,7 +52,7 @@ class Esika extends Component {
                   return (
                     <div key={index} style={style(obj.style)} className="contentCoordenadas">
                       <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
-    
+
                       </button>
                       <div className="modal fade" id={`exampleModal${index}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                         <div className="modal-dialog" role="document">
