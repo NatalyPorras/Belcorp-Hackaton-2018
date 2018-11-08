@@ -12,6 +12,7 @@ class ShopList extends Component {
 
     }
   }
+
   handleStoresBelcorp = ()=>{
     console.log("onclick");
     if(!this.state.showComponentStore){
