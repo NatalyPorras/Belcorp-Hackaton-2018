@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-
+import data from '../data/data.json'
 class Esika extends Component{
     constructor(){
         super();
@@ -9,14 +9,24 @@ class Esika extends Component{
             left:0
         }
     }
-
+    loadData(){
+        data.map(datas=>{
+            console.log(datas.cyzone);
+            
+        })
+    }
     nextSlider = () =>{
 
     }
     prevSlider = () =>{
         
     }
+    componentDidMount(){
+        this.loadData()        
+    }
     render(){
+        console.log(data);
+        
         return(
             <section>
                 <div>

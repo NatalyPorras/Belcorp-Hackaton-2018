@@ -31,7 +31,7 @@ class Lbel extends Component{
                 <div className="buttons-wrapper">
                     <button className="prev-button"></button>
                     <button className="next-button"></button>
-                </div>
+                </div> 
                 <div>
 
                 </div>
