@@ -11,23 +11,8 @@ class Esika extends Component{
         console.log(this.state);
         
     }
-//    loadData(){
-//         this.props.data.catalogue.map(image=>{
-//             console.log(image);
-            
-//             this.state.image.push({
-//                     index:image.index,
-//                     id:image.id,
-//                     image:image.image,
-//                     links:image.links
-//                 }
-//             )
-//             this.setState({image})
-//         })
-       
-//     }
+
     nextSlider = () =>{
-        // const nwIndex = ;
         console.log(this.state)
         this.setState({
           index : this.state.index + 1,
@@ -49,9 +34,7 @@ class Esika extends Component{
         console.log("clicklie");
         
     }
-    // componentWillMount(){
-    //     this.loadData()
-    // }
+   
     render(){
         console.log(this.state.coordenadas)
 
@@ -96,6 +79,8 @@ class Esika extends Component{
                                     <span>{obj.webPrice}</span>
                                     <span>{obj.consultantPrice}</span>
                                     <span>{obj.regularPrice}</span>
+                                    <button> + </button>
+                                    <button> - </button>
 
                                 </div>
                                 <div className="modal-footer">
