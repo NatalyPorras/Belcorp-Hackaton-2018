@@ -7,15 +7,15 @@ const Header = () =>{
     return (
         <nav>
         <img src={Logo} className="m-3" alt="Logo de Belcorp" />
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <Link to="/" class="nav-link active">Inicio</Link>
+        <ul className="nav">
+          <li className="nav-item">
+            <Link to="/" className="nav-link active">Inicio</Link>
           </li>
-          <li class="nav-item">
-            <Link to="/esika" class="nav-link">Esika</Link>
+          <li className="nav-item">
+            <Link to="/esika" className="nav-link">Esika</Link>
           </li>
-          <li class="nav-item">
-            <Link to="/lbel" class="nav-link">Lbel</Link>
+          <li className="nav-item">
+            <Link to="/lbel" className="nav-link">Lbel</Link>
           </li>
 
         </ul>
