@@ -1,11 +1,13 @@
 import React, { Component, Fragment } from 'react';
+import Header from './Header';
+import { Link } from 'react-router-dom';
 import Brocha from '../assets/img/brocha.jpg'
-import Header from './Header'
 
 
-const Consultant = ({ consultantInfo }) => {
-  console.log(consultantInfo)
-}
+
+// const Consultant = ({ consultantInfo }) => {
+//   console.log(consultantInfo)
+// }
 
 class ContactConsultant extends Component {
 
@@ -22,7 +24,7 @@ class ContactConsultant extends Component {
     }
   }
 
-  handleChange = ({ target: { value }}) => {
+  handleChange = ({ target: { value } }) => {
     this.setState({
       consultantCode: value,
     })
@@ -51,29 +53,61 @@ class ContactConsultant extends Component {
               <div>
                 {
                   this.state.consultantCode === "123456"
-                  ? (
-                    <div>
-                      <p>{this.state.consultants[0].name}</p>
-                      <p>{this.state.consultants[0].phoneNumber}</p>
-                      <p>{this.state.consultants[0].email}</p>
-                    </div>
-                  ) 
-                  : null
+                    ? (
+                      <div>
+                        <form>
+                          <fieldset disabled>
+                            <div class="form-group">
+                              <label for="disabledTextInput">Nombre de consultora</label>
+                              <input type="text" id="disabledTextInput" class="form-control" placeholder={this.state.consultants[0].name} />
+                            </div>
+                            <div class="form-group">
+                              <label for="disabledPhone">Teléfono</label>
+                              <input id="disabledPhone" class="form-control" placeholder={this.state.consultants[0].phoneNumber} />
+                            </div>
+                            <div class="form-group">
+                              <label for="disabledEmail">email</label>
+                              <input id="disabledEmail" class="form-control" placeholder={this.state.consultants[0].email} />
+                            </div>
+
+                          </fieldset>
+                          <div className="form-group">
+                            <button type="button" class="btn btn-danger"><Link to="/savelist"> Realizar pedido </Link></button>
+                          </div>
+                        </form>
+                      </div>
+                    )
+                    : null
                 }
               </div>
               <div className="form-group">
 
                 <div className="checkbox">
 
-                  <label data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  <label >
                     <b>O si aún no tienes una, búscala por:</b>
                   </label>
-                  <p><input type="checkbox" /> Ubicación</p>
+                  <p><input type="checkbox" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo" /> Ubicación</p>
                 </div>
               </div>
               <div id="collapseTwo" aria-expanded="true" className="collapse in">
                 <div>
+                  <img className="image-fluid" height="400px" src="https://user-images.githubusercontent.com/39412664/48228873-78f78900-e374-11e8-9e56-694727ee8a3f.PNG" />
+                  <div class="list-group">
+                    {this.state.consultants.map(({ code, name, phoneNumber, email }, i) => {
+                      return (
+                        <div key={i} class="list-group-item list-group-item-action flex-column align-items-start">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">{name}</h5>
+                            <small>{code}</small>
+                          </div>
+                          <p class="mb-1">Número de contácto {phoneNumber}</p>
+                          <small>Email: {email}</small>
+                        </div>
+                      )
 
+                    })}
+                  </div>
                 </div>
               </div>
 
