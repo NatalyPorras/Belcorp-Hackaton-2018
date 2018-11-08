@@ -12,9 +12,38 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      brands: {}
+      brands: {},
+      orderList: []
     }
   }
+
+  addItem = (item) => this.setState({ orderList: [...this.state.orderList, item] })
+
+  addCount = (id) => this.setState({
+    orderList: this.state.orderList.map(item => {
+      if (item.id === id) item.count++;
+      return item
+    })
+  })
+
+  removeItem = (index) => {
+    const { orderList } = this.state;
+    orderList.splice(index, 1);
+    this.setState({ orderList });
+  }
+
+  reduceCount = (id, index) => this.setState({
+    orderList: this.state.orderList.map(item => {
+      if (item.id === id) {
+        item.count--;
+        if (item.count === 0 && index) {
+          this.removeItem(index)
+        }
+        if (item.count === 0) item.count = 1;
+      }
+      return item
+    })
+  })
 
   componentWillMount() {
     this.setState({ brands: Data.default })
@@ -27,13 +56,13 @@ class App extends Component {
           <Route
             path='/'
             exact
-            render={()=><Home data={this.state.brands}/>}
+            render={() => <Home data={this.state.brands} />}
           />
           <Route
             path='/esika'
             exact
-            render={() => <Esika data={esika} />}
-          />  
+            render={() => <Esika data={esika} addItem={this.addItem} reduceCount={this.reduceCount} />}
+          />
           <Route
             path='/lbel'
             exact
@@ -47,7 +76,7 @@ class App extends Component {
           <Route
             path='/shoplist'
             exact
-            render={() => <ShopList />}
+            render={() => <ShopList orderList={this.state.orderList} />}
           />
         </Switch>
       </Router>

@@ -1,40 +1,39 @@
 import React,{Component , Fragment} from 'react';
-import { Link } from 'react-router-dom'
-import Logo from '../assets/img/Logo.PNG';
+
 import Header from './Header'
 import './Esika.css';
-class Esika extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            index : 0,
-            image : props.data.catalogue[0].image,
-            coordenadas: props.data.catalogue[0].products
-        }
-        console.log(this.state);
-        
+class Esika extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: 0,
+      image: props.data.catalogue[0].image,
+      coordenadas: props.data.catalogue[0].products
     }
+    console.log(this.state);
+  }
 
-    nextSlider = () =>{
-        this.setState({
-          index : (this.state.index + 1),
-          image : this.props.data.catalogue[(this.state.index + 1)].image,
-          coordenadas: this.props.data.catalogue[(this.state.index + 1)].products
-        })
-    }
-    prevSlider = () =>{
-        // const newIndex = ;
-        this.setState({
-          index : (this.state.index - 1),
-          image : this.props.data.catalogue[(this.state.index - 1)].image,
-          coordenadas: this.props.data.catalogue[(this.state.index - 1)].products
-        })
-    }
+  nextSlider = () => {
+    console.log(this.state)
+    this.setState({
+      index: this.state.index + 1,
+      image: this.props.data.catalogue[this.state.index].image,
+      coordenadas: this.props.data.catalogue[this.state.index].products
+    })
+  }
 
     handleClick  = () =>{
         console.log("clicklie");
         
     }
+    prevSlider = () => {
+        // const newIndex = ;
+        this.setState({
+          index: this.state.index - 1,
+          image: this.props.data.catalogue[this.state.index].image,
+          coordenadas: this.props.data.catalogue[this.state.index].products
+        })
+      }
    
     render(){
         console.log(this.state)
@@ -61,46 +60,49 @@ class Esika extends Component{
                         return (
                         <div key={index} style={style(obj.style)} className="contentCoordenadas">
                             <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
-
-                            </button>
-                            <div className="modal fade" id={`exampleModal${index}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                            <div className="modal-dialog" role="document">
-                                <div className="modal-content">
-                                <div className="modal-header">
-                                    <h5 className="modal-title" id="exampleModalLabel">{obj.name}</h5>
-                                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div className="modal-body">
-                                    <img src={obj.image} />
-                                    <button> + </button>
-                                    <span> 1 </span>
-                                    <button> - </button>
-
-                                </div>
-                                <div className="modal-footer">
-                                    <button type="button" className="btn btn-dark">Agregar a Bolsa</button>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        )
-                    })}
+                </button>
+                <div className="modal fade" id={`exampleModal${index}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                      <div className="modal-header">
+                        <h5 className="modal-title" id="exampleModalLabel">{obj.name}</h5>
+                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div className="modal-body">
+                        <img src={obj.image} />
+                        <i className="fas fa-minus border p-2" onClick={this.props.reduceCount}></i>
+                        <span className="p-2">{obj.count}</span>
+                        <i className="fas fa-plus border p-2" onClick={() => this.addCount(obj.count)}></i>
+                      </div>
+                      <div className="modal-footer">
+                        <button
+                          type="button"
+                          className="btn btn-dark"
+                          onClick={() => this.props.addItem({
+                            title: obj.name,
+                            img: obj.image,
+                            webPrice: obj.webPrice,
+                            consultantPrice: obj.consultantPrice
+                          })}>Agregar a Bolsa</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div className="buttons-wrapper">
-                    <button className="prev-button" onClick={()=>this.prevSlider()} disabled={this.state.index === 0}></button>
-                    <button className="next-button" onClick={()=>this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length-1}></button>
-                </div> 
-                <div>
-
-                </div>
-            </section>
-            </Fragment>
-            
-        )
-    }
+              </div>
+            )
+          })
+          }
+        </div >
+        <div className="buttons-wrapper">
+          <button className="prev-button" onClick={() => this.prevSlider()} disabled={this.state.index === 0}></button>
+          <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length}></button>
+        </div>
+      </section >
+      </Fragment>
+    )
+  }
 }
 
 export default Esika
