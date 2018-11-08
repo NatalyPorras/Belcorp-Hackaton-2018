@@ -44,7 +44,7 @@ class Esika extends Component {
     
         return (
           <Fragment>
-            <Header />
+            <Header itemsCount={this.props.itemsCount} />
             <section>
               <div className="slider-wrapper">
                 <div className="slider">
