@@ -34,8 +34,13 @@ class App extends Component {
 
   reduceCount = (id, index) => this.setState({
     orderList: this.state.orderList.map(item => {
-      if (item.id === id) item.count--;
-      if (item.count === 0) this.removeItem(index)
+      if (item.id === id) {
+        item.count--;
+        if (item.count === 0 && index) {
+          this.removeItem(index)
+        }
+        if (item.count === 0) item.count = 1;
+      }
       return item
     })
   })

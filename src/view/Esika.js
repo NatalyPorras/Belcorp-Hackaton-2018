@@ -65,8 +65,8 @@ class Esika extends Component {
                       <div className="modal-body">
                         <img src={obj.image} />
                         <i className="fas fa-minus border p-2" onClick={this.props.reduceCount}></i>
-                        <span className="p-2">{count}</span>
-                        <i className="fas fa-plus border p-2" onClick={() => this.addCount(count)}></i>
+                        <span className="p-2">{obj.count}</span>
+                        <i className="fas fa-plus border p-2" onClick={() => this.addCount(obj.count)}></i>
                       </div>
                       <div className="modal-footer">
                         <button
