@@ -8,6 +8,8 @@ import cyzoneLogo from '../assets/img/cyzoneLogo.PNG';
 import MainCard from '../component/MainCard';
 
 const Home = ({ data: { lbel, esika, cyzone } }) => {
+
+  
   return (
     <div>
       <nav>

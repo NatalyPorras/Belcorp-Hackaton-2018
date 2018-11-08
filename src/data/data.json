@@ -1,3 +1,4 @@
+
 {
   "cyzone": {
     "id": 0,
@@ -186,7 +187,7 @@
     "cover": "https://user-images.githubusercontent.com/38477300/48175186-fec5f680-e2d8-11e8-8d06-ae385bffd938.jpg",
     "catalogue": [
       {
-        "index": "e01",
+        "index": "0",
         "id": "e0",
         "image": "https://user-images.githubusercontent.com/38477300/48163751-834f4f80-e2ae-11e8-9fc7-8ae6bd2546d8.jpg",
         "products": [
@@ -244,7 +245,7 @@
         ]
       },
       {
-        "index": "e02",
+        "index": "1",
         "id": "e1",
         "image": "https://user-images.githubusercontent.com/38477300/48163752-83e7e600-e2ae-11e8-981c-546ac292a692.jpg",
         "products": [
@@ -319,7 +320,7 @@
         ]
       },
       {
-        "index": "e03",
+        "index": "2",
         "id": "e2",
         "image": "https://user-images.githubusercontent.com/38477300/48163753-83e7e600-e2ae-11e8-8a27-d6055f050515.jpg",
         "products": [
@@ -411,7 +412,7 @@
         ]
       },
       {
-        "index": "e04",
+        "index": "3",
         "id": "e3",
         "image": "https://user-images.githubusercontent.com/38477300/48168192-5a35bb80-e2bc-11e8-9159-b94bbf218cad.jpg",
         "products": [
@@ -469,7 +470,7 @@
         ]
       },
       {
-        "index": "e05",
+        "index": "4",
         "id": "e4",
         "image": "https://user-images.githubusercontent.com/38477300/48168193-5a35bb80-e2bc-11e8-9737-e9e90fb7f336.jpg",
         "products": [
