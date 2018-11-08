@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Header from './Header';
 import { Link } from 'react-router-dom';
+import Brocha from '../assets/img/brocha.jpg'
+
 
 
 // const Consultant = ({ consultantInfo }) => {
@@ -110,6 +112,9 @@ class ContactConsultant extends Component {
               </div>
 
             </form>
+          </div>
+          <div>
+            <img src={Brocha} style={{width:"300px"}}/>
           </div>
 
         </div>
