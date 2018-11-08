@@ -14,9 +14,9 @@ const Home = ({ data: { lbel, esika, cyzone }, itemsCount }) => {
       <Header itemsCount={itemsCount} />
       <div className="container mt-4">
         <div className="card-deck">
-          <MainCard title="ésika" image={esika.cover} link="/Belcorp-Hackaton-2018/esika" logo={esikaLogo} slogan="Tú y tu belleza lo pueden todo." />
-          <MainCard title="L'BEL" image={lbel.cover} link="/Belcorp-Hackaton-2018/lbel" logo={lbelLogo} slogan="Belleza de verdad para mujeres de verdad." />
-          <MainCard title="Cyzone" image={cyzone.cover} link="/Belcorp-Hackaton-2018/cyzone" logo={cyzoneLogo} slogan="Atrévete con actitud." />
+          <MainCard title="ésika" image={esika.cover} link="esika" logo={esikaLogo} slogan="Tú y tu belleza lo pueden todo." />
+          <MainCard title="L'BEL" image={lbel.cover} link="lbel" logo={lbelLogo} slogan="Belleza de verdad para mujeres de verdad." />
+          <MainCard title="Cyzone" image={cyzone.cover} link="cyzone" logo={cyzoneLogo} slogan="Atrévete con actitud." />
         </div>
         <h4 className="fontBhiso size text-danger mt-4">¿Cómo usar el catálogo virtual?</h4>
         <p className="p-2 mb-0"><i className="fas fa-location-arrow p-2 icon m-1"></i>Revisa los <span className="fontBhiso"><b>productos</b></span></p>
