@@ -1,7 +1,8 @@
-import React,{Component , Fragment} from 'react';
+import React, { Component, Fragment } from 'react';
 import { Link } from 'react-router-dom'
 import Logo from '../assets/img/Logo.PNG';
 import './Esika.css';
+import Header from './Header'
 class Esika extends Component {
   constructor(props) {
     super(props);
@@ -41,59 +42,62 @@ class Esika extends Component {
       height: coordenada.height,
       tabIndex: coordenada.zindex
     });
-    
+
     return (
-      <section>
-        <div className="slider-wrapper">
-          <div className="slider">
-            <img key={this.state.image} src={this.state.image} />
-          </div>
-          {this.state.coordenadas.map((obj, index) => {
+      <Fragment>
+        <Header />
+        <section>
+          <div className="slider-wrapper">
+            <div className="slider">
+              <img key={this.state.image} src={this.state.image} />
+            </div>
+            {this.state.coordenadas.map((obj, index) => {
 
-            return (
-              <div key={index} style={style(obj.style)} className="contentCoordenadas">
-                <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
+              return (
+                <div key={index} style={style(obj.style)} className="contentCoordenadas">
+                  <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
 
-                </button>
-                <div className="modal fade" id={`exampleModal${index}`} tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div className="modal-dialog" role="document">
-                    <div className="modal-content">
-                      <div className="modal-header">
-                        <h5 className="modal-title" id="exampleModalLabel">{obj.name}</h5>
-                        <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div className="modal-body">
-                        <img src={obj.image} />
-                        <i className="fas fa-minus border p-2" onClick={this.props.reduceCount}></i>
+                  </button>
+                  <div className="modal fade" id={`exampleModal${index}`} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div className="modal-dialog" role="document">
+                      <div className="modal-content">
+                        <div className="modal-header">
+                          <h5 className="modal-title" id="exampleModalLabel">{obj.name}</h5>
+                          <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div className="modal-body">
+                          <img src={obj.image} />
+                          {/* <i className="fas fa-minus border p-2" onClick={()=>this.props.reduceCount(obj.id)}></i>
                         <span className="p-2">{obj.count}</span>
-                        <i className="fas fa-plus border p-2" onClick={() => this.addCount(obj.count)}></i>
-                      </div>
-                      <div className="modal-footer">
-                        <button
-                          type="button"
-                          className="btn btn-dark"
-                          onClick={() => this.props.addItem({
-                            title: obj.name,
-                            img: obj.image,
-                            webPrice: obj.webPrice,
-                            consultantPrice: obj.consultantPrice
-                          })}>Agregar a Bolsa</button>
+                        <i className="fas fa-plus border p-2" onClick={() => this.props.addCount(obj.id)}></i> */}
+                        </div>
+                        <div className="modal-footer">
+                          <button
+                            type="button"
+                            className="btn btn-dark"
+                            onClick={() => this.props.addItem({
+                              title: obj.name,
+                              img: obj.image,
+                              webPrice: obj.webPrice,
+                              consultantPrice: obj.consultantPrice
+                            })}>Agregar a Bolsa</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            )
-          })
-          }
-        </div >
-        <div className="buttons-wrapper">
-          <button className="prev-button" onClick={() => this.prevSlider()} disabled={this.state.index === 0}></button>
-          <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length}></button>
-        </div>
-      </section >
+              )
+            })
+            }
+          </div >
+          <div className="buttons-wrapper">
+            <button className="prev-button" onClick={() => this.prevSlider()} disabled={this.state.index === 0}></button>
+            <button className="next-button" onClick={() => this.nextSlider()} disabled={this.state.index === this.props.data.catalogue.length}></button>
+          </div>
+        </section >
+      </Fragment>
     )
   }
 }

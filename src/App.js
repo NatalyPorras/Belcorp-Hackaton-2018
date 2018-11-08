@@ -61,7 +61,7 @@ class App extends Component {
           <Route
             path='/esika'
             exact
-            render={() => <Esika data={esika} addItem={this.addItem} reduceCount={this.reduceCount} />}
+            render={() => <Esika data={esika} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} />}
           />
           <Route
             path='/lbel'
