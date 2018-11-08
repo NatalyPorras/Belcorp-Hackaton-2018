@@ -19,14 +19,13 @@ class Esika extends Component{
           image : this.props.data.catalogue[(this.state.index + 1)].image,
           coordenadas: this.props.data.catalogue[(this.state.index + 1)].products
         })
-        console.log(this.state)
     }
     prevSlider = () =>{
         // const newIndex = ;
         this.setState({
-          index : this.state.index - 1,
-          image : this.props.data.catalogue[this.state.index - 1].image,
-          coordenadas: this.props.data.catalogue[this.state.index - 1].products
+          index : (this.state.index - 1),
+          image : this.props.data.catalogue[(this.state.index - 1)].image,
+          coordenadas: this.props.data.catalogue[(this.state.index - 1)].products
         })
     }
 
@@ -36,6 +35,7 @@ class Esika extends Component{
     }
    
     render(){
+        console.log(this.state)
         console.log(this.props.data.catalogue.length);
         
         const style = (coordenada) => ({
