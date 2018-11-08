@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
-import Logo from '../assets/img/Logo.PNG';
+import Logo from './belcorp.png';
 import './Header.css'
 
 const Header = () =>{
     return (
-        <nav>
+        <nav className="contentNav">
         <img src={Logo} className="m-3" alt="Logo de Belcorp" />
         <ul className="nav">
           <li className="nav-item">
