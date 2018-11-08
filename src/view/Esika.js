@@ -1,5 +1,6 @@
 import React,{Component , Fragment} from 'react';
-import Header from './Header';
+import { Link } from 'react-router-dom'
+import Logo from '../assets/img/Logo.PNG';
 import './Esika.css';
 class Esika extends Component{
     constructor(props){
@@ -49,7 +50,20 @@ class Esika extends Component{
         });
         return(
             <Fragment>
-            <Header/>
+            <nav>
+                <img src={Logo} className="m-3" alt="Logo de Belcorp" />
+                <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <Link to="/" class="nav-link">Inicio</Link>
+                </li>
+                <li class="nav-item">
+                    <Link to="/esika" class="nav-link active">Esika</Link>
+                </li>
+                <li class="nav-item">
+                    <Link to="/lbel" class="nav-link">Lbel</Link>
+                </li>
+                </ul>
+            </nav>
             <section className="contentCatalogo">
                 <div className="container slider-wrapper"> 
                     <div className="row slider">    
