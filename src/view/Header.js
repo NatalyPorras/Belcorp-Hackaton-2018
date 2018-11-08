@@ -5,7 +5,7 @@ import './Header.css'
 
 const Header = () =>{
     return (
-        <nav>
+        <nav className="contentNav">
         <img src={Logo} className="m-3" alt="Logo de Belcorp" />
         <ul className="nav">
           <li className="nav-item">
