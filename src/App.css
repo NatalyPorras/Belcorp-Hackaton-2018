@@ -17,7 +17,9 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
-
+.fontBhiso{
+  font-family: "berranger-hand-itc-std-opentype";
+}
 .card:hover .overlay {
   opacity: 0;
 }
