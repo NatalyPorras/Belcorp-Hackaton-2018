@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 import React, { Component } from 'react';
+=======
+import React,{Component , Fragment} from 'react';
+import { Link } from 'react-router-dom'
+import Logo from '../assets/img/Logo.PNG';
+>>>>>>> ba847a08a1ef61fd1ad282cede982df3476a2443
 import './Esika.css';
 class Esika extends Component {
   constructor(props) {
@@ -20,6 +26,7 @@ class Esika extends Component {
     })
   }
 
+<<<<<<< HEAD
   prevSlider = () => {
     // const newIndex = ;
     this.setState({
@@ -28,6 +35,51 @@ class Esika extends Component {
       coordenadas: this.props.data.catalogue[this.state.index].products
     })
   }
+=======
+    handleClick  = () =>{
+        console.log("clicklie");
+        
+    }
+   
+    render(){
+        console.log(this.state)
+        console.log(this.props.data.catalogue.length);
+        
+        const style = (coordenada) => ({
+            position: "absolute",
+            cursor:"pointer",
+            left: coordenada.left,
+            top: coordenada.top,
+            width: coordenada.width,
+            height: coordenada.height,
+            tabIndex: coordenada.zindex
+        });
+        return(
+            <Fragment>
+            <nav>
+                <img src={Logo} className="m-3" alt="Logo de Belcorp" />
+                <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <Link to="/" class="nav-link">Inicio</Link>
+                </li>
+                <li class="nav-item">
+                    <Link to="/esika" class="nav-link active">Esika</Link>
+                </li>
+                <li class="nav-item">
+                    <Link to="/lbel" class="nav-link">Lbel</Link>
+                </li>
+                </ul>
+            </nav>
+            <section className="contentCatalogo">
+                <div className="container slider-wrapper"> 
+                    <div className="row slider">    
+                      <img key={this.state.image} src={this.state.image}/>   
+                    </div>
+                    {this.state.coordenadas.map((obj,index)=>{
+                        return (
+                        <div key={index} style={style(obj.style)} className="contentCoordenadas">
+                            <button type="button" className="pulse-button" data-toggle="modal" data-target={`#exampleModal${index}`}>
+>>>>>>> ba847a08a1ef61fd1ad282cede982df3476a2443
 
   render() {
     const style = (coordenada) => ({
