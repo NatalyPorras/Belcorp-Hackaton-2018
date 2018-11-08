@@ -1,54 +1,7 @@
-import React,{Component} from 'react';
-import data from '../data/data.json'
-class Esika extends Component{
-    constructor(){
-        super();
-        this.state ={
-            image:[],
-            activeIndex : 1,
-            left:0
-        }
-    }
-    loadData(){
-        data.map(datas=>{
-            console.log(datas.cyzone);
-            
-        })
-    }
-    nextSlider = () =>{
+import React from 'react';
 
-    }
-    prevSlider = () =>{
-        
-    }
-    componentDidMount(){
-        this.loadData()        
-    }
-    render(){
-        console.log(data);
-        
-        return(
-            <section>
-                <div>
-                    <h3>Descubre Nuestro</h3>
-                    <h4>Catálogo</h4>
-                    <p>Campaña 17</p>
-                </div>
-                <div className="slide-wrapper"> 
-                    <div className="slider">
-                    HOLAAAA
-                    </div>
-                </div>
-                <div className="buttons">
-                    <button></button>
-                    <button></button>
-                </div>
-                <div>
+const Esika = () => {
 
-                </div>
-            </section>
-        )
-    }
 }
 
 export default Esika

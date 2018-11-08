@@ -5,6 +5,7 @@ import {Home} from './view/Home';
 import Esika from './view/Esika';
 import LBel from './view/LBel';
 import Cyzone from './view/Cyzone';
+import ShopList from './view/ShopList';
 
 const App = () => (
   <Router>
@@ -28,6 +29,11 @@ const App = () => (
         path='/cyzone'
         exact
         component={Cyzone}
+      />
+      <Route
+        path='/shoplist'
+        exact
+        component={ShopList}
       />
     </Switch>
   </Router>
