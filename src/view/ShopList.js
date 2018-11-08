@@ -9,7 +9,7 @@ const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
  
   return (
     <Fragment className="container" >
-      <Header />
+      <Header itemsCount={orderList.length} />
       {
         orderList.map(({ title, consultantPrice, webPrice, count, img, id }, i) =>
           <div className="media p-3" key={i}>

@@ -6,7 +6,7 @@ import Esika from './view/Esika';
 import LBel from './view/LBel';
 import Cyzone from './view/Cyzone';
 import ShopList from './view/ShopList';
-import StoresBelcorp from './view/storesBelcorp';
+import ContactConsultant from './view/ContactConsultant';
 import * as Data from './data/data.json';
 
 class App extends Component {
@@ -88,27 +88,27 @@ class App extends Component {
           <Route
             path='/esika'
             exact
-            render={() => <Esika data={esika} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} />}
+            render={() => <Esika data={esika} addItem={this.addItem} itemsCount={this.state.orderList.length} />}
           />
           <Route
             path='/lbel'
             exact
-            render={() => <LBel data={lbel} />}
+            render={() => <LBel data={lbel} addItem={this.addItem} itemsCount={this.state.orderList.length} />}
           />
           <Route
             path='/cyzone'
             exact
-            render={() => <Cyzone data={cyzone} />}
+            render={() => <Cyzone data={cyzone} itemsCount={this.state.orderList.length} />}
           />
           <Route
             path='/shoplist'
             exact
             render={() => <ShopList orderList={this.state.orderList} addItem={this.addItem} reduceCount={this.reduceCount} addCount={this.addCount} removeItem={this.removeItem} total={this.state.total} />}
           />
-           <Route
-            path='/storesBelcorp'
+          <Route
+            path='/contact-a-consultant'
             exact
-            render={() => <StoresBelcorp />}
+            render={() => <ContactConsultant itemsCount={this.state.orderList.length} />}
           />
         </Switch>
       </Router>
