@@ -1,14 +1,36 @@
-import React, { Fragment } from 'react';
+import React, {Component, Fragment } from 'react';
 import Header from './Header';
-import { Link } from 'react-router-dom'
+import StoresBelcorp from  './storesBelcorp';
+// import { Link } from 'react-router-dom'
+// import Stores from './storesBelcorp';
 
-const handleStoresBelcorp = () =>{
-  return(<Link to="/storesBelcorp" className="nav-link active" />)
-}
 const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
  
-  return (
-    <Fragment className="container" >
+class ShopList extends Component {
+  constructor(){
+    super();
+    this.state={
+      showComponentStore:false,
+
+    }
+  }
+
+  handleStoresBelcorp = ()=>{
+    console.log("onclick");
+    if(!this.state.showComponentStore){
+        this.setState({
+            showComponentStore: true 
+        })
+    }else{
+                this.setState({
+            showComponentStore: false 
+        })
+    }
+ }
+  render(){
+    const {orderList, reduceCount, addCount, removeItem, total} = this.props
+    return(
+      <Fragment className="container" >
       <Header itemsCount={orderList.length} />
       {
         orderList.map(({ title, consultantPrice, webPrice, count, img, id }, i) =>
@@ -45,11 +67,17 @@ const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
         <div className="row">
           <button className="col-md-4 m-4 shadow btn btn-dark">Compra online</button>
           <button className="col-md-4 m-4 shadow btn btn-danger">Conectar consultora</button>
-          <button className="col-md-4 m-4 shadow btn btn-outline-dark" onClick={handleStoresBelcorp()}>Buscar en tienda</button>
+          <button className="col-md-4 m-4 shadow btn btn-outline-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
         </div>
       </div>
+      <div>
+      {this.state.showComponentStore ? <StoresBelcorp /> : null}
+
+      </div>
+
     </Fragment>
-  );
+    )
+  }
 }
 
 export default ShopList;
