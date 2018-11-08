@@ -24,19 +24,19 @@ self.__precacheManifest = [
     "url": "/Belcorp-Hackaton-2018/static/js/runtime~main.081d556f.js"
   },
   {
-    "revision": "db99acd016812e607853",
-    "url": "/Belcorp-Hackaton-2018/static/js/main.db99acd0.chunk.js"
+    "revision": "5b9bc2559e34f2ba530a",
+    "url": "/Belcorp-Hackaton-2018/static/js/main.5b9bc255.chunk.js"
   },
   {
     "revision": "be619009e1f21c9e41d2",
     "url": "/Belcorp-Hackaton-2018/static/js/1.be619009.chunk.js"
   },
   {
-    "revision": "db99acd016812e607853",
-    "url": "/Belcorp-Hackaton-2018/static/css/main.b908e508.chunk.css"
+    "revision": "5b9bc2559e34f2ba530a",
+    "url": "/Belcorp-Hackaton-2018/static/css/main.85710060.chunk.css"
   },
   {
-    "revision": "37bad76c047b031364a0d01f66580818",
+    "revision": "144fcca78d3d7005145d1825824631b7",
     "url": "/Belcorp-Hackaton-2018/index.html"
   }
 ];
