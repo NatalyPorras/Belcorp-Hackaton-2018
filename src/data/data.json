@@ -7,86 +7,121 @@
         "index": "c01",
         "id": "c0",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       },
       {
         "index": "c02",
         "id": "c1",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       },
       {
         "index": "c03",
         "id": "c2",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       },
       {
         "index": "c04",
         "id": "c3",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       },
       {
         "index": "c05",
         "id": "c4",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       }
     ]
   },
@@ -97,87 +132,156 @@
       {
         "index": "l01",
         "id": "l0",
-        "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "image": "https://user-images.githubusercontent.com/38477300/48184312-9cccb780-e2ff-11e8-8a08-a48809ac385e.jpg",
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "73.7%",
+              "top": "54.8%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "base sérum concentré total",
+            "image": "https://static.comunicae.com.mx/photos/notas/117133/117133-1504088362670.jpg",
+            "webPrice": "S/ 98.00",
+            "consultantPrice": "S/ 98.00",
+            "regularPrice": "S/ 123.00"
+          },
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "36.09%",
+              "top":"75.6%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "máscara megacils extend",
+            "image": "https://bellezacheck.com/wp-content/uploads/0000279054008.jpg",
+            "webPrice": "S/ 51.00",
+            "consultantPrice": "S/ 51.00",
+            "regularPrice": "S/ 64.00"
           }
-        }
+        ] 
       },
       {
         "index": "l02",
         "id": "l1",
-        "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "image": "https://user-images.githubusercontent.com/38477300/48184314-9d654e00-e2ff-11e8-8d18-9b57e819a66a.jpg",
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "18.64%",
+              "top": "54.09%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "mithyka",
+            "image": "http://cosmeticosonline.co/wp-content/uploads/2017/10/Perfume-Mithyka.jpg",
+            "webPrice": "S/ 98.00",
+            "consultantPrice": "S/ 98.00",
+            "regularPrice": "S/ 150.00"
+          },
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "75.46%",
+              "top": "64.65%",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "labial dúo amplifiant",
+            "image": "",
+            "webPrice": "S/ 41.00",
+            "consultantPrice": "S/ 33.00",
+            "regularPrice": "S/ 64.00"
           }
-        }
+        ] 
       },
       {
         "index": "l03",
         "id": "l2",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       },
       {
         "index": "l04",
         "id": "l3",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       },
       {
         "index": "l05",
         "id": "l4",
         "image": "",
-        "products": {
-          "href": "",
-          "title": "",
-          "style": {
-            "position": 0,
-            "left": 0,
-            "top": 0,
-            "width": 0,
-            "height": 0,
-            "z-index": 0
+        "products": [
+          {
+            "href": "",
+            "title": "",
+            "style": {
+              "position": 0,
+              "left": "",
+              "top": "",
+              "width": "8.86%",
+              "height": "8.86%",
+              "z-index": 2
+            },
+            "name": "",
+            "image": "",
+            "webPrice": "",
+            "consultantPrice": "",
+            "regularPrice": ""
           }
-        }
+        ] 
       }
     ]
   },
@@ -236,7 +340,7 @@
               "z-index": 2
             },
             "name": "máscara hd divina",
-            "image": "",
+            "image": "https://myostoregt.com/image/cache/catalog/hd-divina-esika-800x800.jpg",
             "webPrice": "S/ 35.90",
             "consultantPrice": "S/ 30.90",
             "regularPrice": "S/ 46.00"
@@ -334,11 +438,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "cadena collar",
+            "image": "https://assets.stelladot.com/catalog_service/system/images/style/ipad_large_1x/d671f1eaad9509010b27fdf7d40ab16e686e5e8f.jpg?1501175649",
+            "webPrice": "S/ 29.90",
+            "consultantPrice": "S/ 29.90",
+            "regularPrice": "S/ 42.00"
           },
           {
             "href": "",
@@ -351,11 +455,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "dije frost heart",
+            "image": "https://cdn.shopify.com/s/files/1/0026/8963/0321/products/fainted_heart_02.jpeg?v=1537519284",
+            "webPrice": "S/ 14.90",
+            "consultantPrice": "S/ 14.90",
+            "regularPrice": "S/ 20.00"
           },
           {
             "href": "",
@@ -368,11 +472,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "dije spark crystal",
+            "image": "https://www.aristocrazy.com/dw/image/v2/BCBK_PRD/on/demandware.static/-/Sites-Aristocrazy-master-catalog/default/dw92b66be8/images/hi-res/J03281-03-PQ.jpg?sw=800&sh=800&sm=fit",
+            "webPrice": "S/ 14.90",
+            "consultantPrice": "S/ 14.90",
+            "regularPrice": "S/ 20.00"
           },
           {
             "href": "",
@@ -385,11 +489,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "dije mystic tree",
+            "image": "https://www.euvella.com/wp-content/uploads/2017/02/Euvella-Product-Rose-Gold-Necklace-Tree-Of-Life.jpg",
+            "webPrice": "S/ 14.90",
+            "consultantPrice": "S/ 14.90",
+            "regularPrice": "S/ 20.00"
           },
           {
             "href": "",
@@ -402,11 +506,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "cadena pulsera",
+            "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/hf3/h37/9006786707486/210086632_productCategoryImage_prodCategory_product",
+            "webPrice": "S/ 24.90",
+            "consultantPrice": "S/ 24.90",
+            "regularPrice": "S/ 38.00"
           }
         ]
       },
@@ -426,11 +530,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "renacer advanced limpiadora detox",
+            "image": "https://static.wixstatic.com/media/16caca_fa98358696004ef59f563dd81d7329b0~mv2.png/v1/fill/w_500,h_500,al_c,q_90/file.jpg",
+            "webPrice": "S/ 32.90",
+            "consultantPrice": "S/ 32.90",
+            "regularPrice": "S/ 42.00"
           },
           {
             "href": "",
@@ -444,10 +548,10 @@
               "z-index": 2
             },
             "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200091935_1800x1800.jpg?v=1539205533",
+            "webPrice": "S/ 32.90",
+            "consultantPrice": "S/ 32.90",
+            "regularPrice": "S/ 42.00"
           },
           {
             "href": "",
@@ -460,11 +564,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "renacer advanced dd cream",
+            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/renacer_advance_dd-claro_1800x1800.jpg?v=1539277297",
+            "webPrice": "S/ 53.90",
+            "consultantPrice": "S/ 53.90",
+            "regularPrice": "S/ 68.00"
           }
         ]
       },
@@ -484,11 +588,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "lentes metal glam",
+            "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/h82/h16/8934116524062/210088349_productCategoryImage_prodCategory_product",
+            "webPrice": "S/ 69.90",
+            "consultantPrice": "S/ 59.90",
+            "regularPrice": "S/ 100.00"
           },
           {
             "href": "",
@@ -501,11 +605,11 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "",
-            "image": "",
-            "webPrice": "",
-            "consultantPrice": "",
-            "regularPrice": ""
+            "name": "reloj minimal vitral",
+            "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/h82/h16/8934116524062/210088349_productCategoryImage_prodCategory_product",
+            "webPrice": "S/ 169.90",
+            "consultantPrice": "S/ 230.00",
+            "regularPrice": "S/ 169.90"
           }
         ]
       }
