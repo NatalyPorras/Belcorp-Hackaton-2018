@@ -80,7 +80,7 @@ class ContactConsultant extends Component {
             </form>
           </div>
           <div>
-            <img src={Brocha}/>
+            <img src={Brocha} style={{width:"300px"}}/>
           </div>
 
         </div>
