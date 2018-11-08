@@ -1,10 +1,9 @@
 import React from 'react';
-import Logo from '../assets/img/Logo.PNG';
 import esikaLogo from '../assets/img/esikaLogo.PNG';
 import lbelLogo from '../assets/img/lbelLogo.PNG';
 import cyzoneLogo from '../assets/img/cyzoneLogo.PNG';
-
-
+import './Home.css'
+import Header from './Header'
 import MainCard from '../component/MainCard';
 
 const Home = ({ data: { lbel, esika, cyzone } }) => {
@@ -12,9 +11,7 @@ const Home = ({ data: { lbel, esika, cyzone } }) => {
   
   return (
     <div>
-      <nav>
-        <img src={Logo} className="m-3" alt="Logo de Belcorp" />
-      </nav>
+      <Header />
       <div className="container">
         <div className="card-deck">
           <MainCard title="ésika" image={esika.cover} link="esika" logo={esikaLogo} />
