@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700&amp;subset=cyrillic,latin-ext');
+
 .overlay {
   opacity: 1;
   display: block;
@@ -5,6 +7,10 @@
   height: auto;
   transition: .2s ease;
   backface-visibility: hidden;
+}
+
+.icon {
+  font-size: 160%;
 }
 
 .mask {
@@ -18,8 +24,14 @@
   text-align: center;
 }
 .fontBhiso{
-  font-family: "berranger-hand-itc-std-opentype";
+  font-family: "Caveat";
+  font-size: 1.3em;
 }
+
+.size {
+ font-size: 1.8em;
+}
+
 .card:hover .overlay {
   opacity: 0;
 }

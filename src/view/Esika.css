@@ -87,6 +87,10 @@
     border: none;
     border-radius: 50%;
     background: #ffffff;
+    background-image: url(../assets/icon/icon.png);
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
     border: 1px solid #000;
     cursor: pointer;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
