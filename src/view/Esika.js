@@ -49,9 +49,9 @@ class Esika extends Component{
             tabIndex: coordenada.zindex
         });
         return(
-            <section>
-                <div className="slider-wrapper"> 
-                    <div className="slider">    
+            <section className="contentCatalogo">
+                <div className="container slider-wrapper"> 
+                    <div className="row slider">    
                       <img key={this.state.image} src={this.state.image}/>   
                     </div>
                     {this.state.coordenadas.map((obj,index)=>{
