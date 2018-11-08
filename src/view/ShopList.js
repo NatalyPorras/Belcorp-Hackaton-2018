@@ -1,56 +1,49 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Header from './Header'
 
-const sumTotalOrder = (arr) => {
-  let sum = 0;
-  arr.forEach(({ wedPrice }) => sum += wedPrice);
-  return sum
-}
-
-const ShopList = ({ orderList }) => {
-  const total = sumTotalOrder(orderList);
+const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
   return (
-    <div className="">
-      <h3>Bolsa de compra</h3>
+    <Fragment className="container" >
+      <Header />
       {
-        orderList.map(({ title, consultanPrice, wedPrice, count, img }) =>
-          <div className="media p-3 border">
-            <img className="align-self-center mr-3" src={img} />
+        orderList.map(({ title, consultantPrice, webPrice, count, img, id }, i) =>
+          <div className="media p-3" key={i}>
+            <img className="align-self-center image mr-3" src={img} height="120px" alt={title} />
             <div className="media-body">
-              <h5>{title}</h5>
+              <h5 className="mt-0">{title}</h5>
               <div className="d-flex flex-direction-column">
                 <p className="border-right m-3 p-3">
-                  {consultanPrice}
+                  {webPrice}
                   <br />
                   Precio Online
                 </p>
-                <p className="mt-3 mb-3 pt-3 pb-3 text-red">
-                  {wedPrice}
+                <p className="mt-3 mb-3 pt-3 pb-3 text-danger">
+                  {consultantPrice}
                   <br />
                   Precio comprando con consultora
                 </p>
               </div>
-              <div>
-                <i class="fas fa-minus border p-2"></i>
-                <span>{count}</span>
-                <i className="fas fa-plus border p-2"></i>
+              <div className="mt-0">
+                <i className="fas fa-minus border p-2" onClick={()=>reduceCount(title, i)}></i>
+                <span className="p-2">{count}</span>
+                <i className="fas fa-plus border p-2" onClick={()=>addCount(id)}></i>
               </div>
             </div>
-            <button type="button" class="close" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <button type="button" className="close" onClick={()=>removeItem(i)}><span>×</span></button>
           </div>
         )
       }
       <div className="bg-light">
-        <span>Total Online <b className="ml-4">{total}</b></span>
+        <span>Total Online <b className="ml-4">s/ {total}</b></span>
       </div>
       <div className="container">
         <div className="row">
-          <button className="col-md-4 m-4 shadow btn btn-black">Compra online</button>
-          <button className="col-md-4 m-4 shadow btn btn-red">Conectar consultora</button>
-          <button className="col-md-4 m-4 shadow btn btn-white">Buscar en tienda</button>
+          <button className="col-md-4 m-4 shadow btn btn-dark">Compra online</button>
+          <button className="col-md-4 m-4 shadow btn btn-danger">Conectar consultora</button>
+          <button className="col-md-4 m-4 shadow btn btn-outline-dark">Buscar en tienda</button>
         </div>
       </div>
-    </div>
-
+    </Fragment>
   );
 }
 
