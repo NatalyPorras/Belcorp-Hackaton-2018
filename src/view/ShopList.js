@@ -3,8 +3,6 @@ import Header from './Header';
 import StoresBelcorp from  './storesBelcorp';
 // import { Link } from 'react-router-dom'
 // import Stores from './storesBelcorp';
-
-const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
  
 class ShopList extends Component {
   constructor(){
