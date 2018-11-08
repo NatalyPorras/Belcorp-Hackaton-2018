@@ -8,7 +8,7 @@
 }
 
 .mask {
-  transition: .2s ease;
+  transition: .1s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -19,7 +19,7 @@
 }
 
 .card:hover .overlay {
-  opacity: 0.3;
+  opacity: 0;
 }
 
 .card:hover .mask {
