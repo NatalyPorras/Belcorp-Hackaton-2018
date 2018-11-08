@@ -4,6 +4,8 @@ import StoresBelcorp from  './storesBelcorp';
 // import { Link } from 'react-router-dom'
 // import Stores from './storesBelcorp';
 
+const ShopList = ({ orderList, reduceCount, addCount, removeItem, total }) => {
+ 
 class ShopList extends Component {
   constructor(){
     super();
@@ -29,7 +31,7 @@ class ShopList extends Component {
     const {orderList, reduceCount, addCount, removeItem, total} = this.props
     return(
       <Fragment className="container" >
-      <Header />
+      <Header itemsCount={orderList.length} />
       {
         orderList.map(({ title, consultantPrice, webPrice, count, img, id }, i) =>
           <div className="media p-3" key={i}>
