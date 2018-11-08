@@ -6,7 +6,7 @@
   .slider-wrapper {
     width: 95%;
     height: 470px;
-    margin: 25% auto 0;    
+    margin: 0px auto 0;    
     overflow: hidden;
     border-radius: 4px !important;
     text-align: center;
@@ -38,7 +38,7 @@
     justify-content: space-between;
     position: absolute;
     top: 55%;
-    margin-top: -15px;
+    /* margin-top: -15px; */
   }
   
   .buttons-wrapper .prev-button, .buttons-wrapper .next-button {
@@ -131,17 +131,11 @@
     margin:0 auto;
   }
 
-  @media (min-width: 1200px){
-    .container {
-        max-width: 1140px;
-    }
-  }
-
 @media (min-width: 992px){
   .slider-wrapper {
     width: 35%;
     height: 550px;
-    margin: 10% auto 0;    
+    margin: 0 auto 0;    
     position: relative;
   }
   .buttons-wrapper {
@@ -157,6 +151,6 @@
   }
   .pulse-button{
     top: 1%;
-    margin-top: -70px;
+    /* margin-top: -70px; */
   }
 }
