@@ -6,7 +6,7 @@ import './Header.css'
 const Header = ({ itemsCount }) => {
   return (
     <nav className="navbar contentNav">
-      <Link to="/" className="navbar-brand"><img src={Logo} className="logo" alt="Logo de Belcorp" /></Link>
+      <Link to="/Belcorp-Hackaton-2018" className="navbar-brand"><img src={Logo} className="logo" alt="Logo de Belcorp" /></Link>
       <div className="nav">
         <Link to="/Belcorp-Hackaton-2018/esika" className="m-2">Esika</Link>
         <Link to="/Belcorp-Hackaton-2018/lbel" className="m-2">L'bel</Link>
