@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Brocha from '../assets/img/brocha.jpg'
 import Header from './Header'
 
 
@@ -77,6 +78,9 @@ class ContactConsultant extends Component {
               </div>
 
             </form>
+          </div>
+          <div>
+            <img src={Brocha}/>
           </div>
 
         </div>
