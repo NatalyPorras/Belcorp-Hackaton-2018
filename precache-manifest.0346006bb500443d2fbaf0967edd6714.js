@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/Belcorp-Hackaton-2018/static/media/lbelLogo.a7f39bde.PNG"
   },
   {
-    "revision": "fe8a6873552e76b97e94",
+    "revision": "62fdb85ee99fd9a9b2c1",
     "url": "/Belcorp-Hackaton-2018/static/css/main.2a1e2d24.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/Belcorp-Hackaton-2018/static/media/esikaLogo.795396cc.PNG"
   },
   {
-    "revision": "fe8a6873552e76b97e94",
-    "url": "/Belcorp-Hackaton-2018/static/js/main.fe8a6873.chunk.js"
+    "revision": "62fdb85ee99fd9a9b2c1",
+    "url": "/Belcorp-Hackaton-2018/static/js/main.62fdb85e.chunk.js"
   },
   {
     "revision": "6421205e809312afae93aede8a5ac72d",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/Belcorp-Hackaton-2018/static/media/brocha.4f4611e8.jpg"
   },
   {
-    "revision": "a00c88b2200ccd5e0cbb7e0de1ad71c5",
+    "revision": "776c2df09b86b4a35746b9c828ca0d42",
     "url": "/Belcorp-Hackaton-2018/index.html"
   }
 ];

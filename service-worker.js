@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Belcorp-Hackaton-2018/precache-manifest.295f926e473a96e773ff7ea21bca3ed8.js"
+  "/Belcorp-Hackaton-2018/precache-manifest.0346006bb500443d2fbaf0967edd6714.js"
 );
 
 workbox.clientsClaim();
