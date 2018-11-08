@@ -3,30 +3,17 @@ import { Link } from 'react-router-dom'
 import Logo from './belcorp.png';
 import './Header.css'
 
-const Header = () =>{
-    return (
-        <nav className="contentNav">
-        <img src={Logo} className="m-3" alt="Logo de Belcorp" />
-        <ul className="nav">
-          <li className="nav-item">
-            <Link to="/" className="nav-link active">Inicio</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/esika" className="nav-link">Esika</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/lbel" className="nav-link">Lbel</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/cyzone" className="nav-link">Cyzone</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/shopList" className="nav-link">Bolsa</Link>
-          </li>
-
-        </ul>
-      
-      </nav>
-    )
+const Header = ({ itemsCount }) => {
+  return (
+    <nav className="navbar contentNav">
+      <Link to="/" className="navbar-brand"><img src={Logo} className="logo" alt="Logo de Belcorp" /></Link>
+      <div className="nav">
+        <Link to="/esika" className="m-2">Esika</Link>
+        <Link to="/lbel" className="m-2">L'bel</Link>
+        <Link to="/cyzone" className="m-2">Cyzone</Link>
+        <Link to="/shopList" className="m-2"><i className="fas fa-shopping-bag text-white"></i><span class="badge badge-pill badge-danger">{itemsCount}</span></Link>
+      </div>
+    </nav>
+  )
 }
 export default Header
