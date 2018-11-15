@@ -9,17 +9,16 @@
   backface-visibility: hidden;
 }
 
-p, span, button, input, .fontOpSa {
+p, span, button, input, a {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600; 
 } 
 
-.fontOpSa {
-  font-weight: normal;
+.btn-width {
+  width: 230px;
 }
 
-button, .fontOpSa {
-  width: 230px;
+.fontBold {
+  font-weight: 600;
 }
 
 .bg-grey {
@@ -47,7 +46,7 @@ button, .fontOpSa {
 }
 
 .size {
- font-size: 1.8em;
+ font-size: 1.9em;
 }
 
 .card:hover .overlay {

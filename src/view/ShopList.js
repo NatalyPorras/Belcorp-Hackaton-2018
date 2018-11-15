@@ -38,7 +38,7 @@ class ShopList extends Component {
                     <img className="align-self-center image mr-3" src={img} height="120px" alt={title} />
                     <div className="">
                       <h5 className="mt-0">{title}</h5>
-                      <div className="d-flex flex-direction-column">
+                      <div className="d-flex flex-direction-column fontBold">
                         <p className="border-right border-dark mr-3 pr-3">
                           {webPrice}
                           <br />
@@ -59,18 +59,18 @@ class ShopList extends Component {
                     <button type="button" className="close" onClick={() => removeItem(i)}><span>×</span></button>
                   </div>
                 )
-                : <h1 className="p-md-4 mt-3 mt-md-0 mb-0 p-2 fontBhiso">Empieza a añadir artículos a tu bolsa</h1>
+                : <h1 className="p-md-4 mt-3 mt-md-0 mb-0 p-2 fontBhiso size">Empieza a añadir artículos a tu bolsa</h1>
             }
           </div>
-          <div className="col-md-3 d-flex align-items-center justify-content-between bg-grey p-2 pr-4 pl-4 p-md-4 mt-3 mb-2 m-md-0">
+          <div className="col-md-3 fontBold d-flex align-items-center justify-content-between bg-grey p-2 pr-4 pl-4 p-md-4 mt-3 mb-2 m-md-0">
             <span>Total Online </span> <span className="">S/ {total}</span>
           </div>
         </div>
         <div className="container-fluid">
           <div className="d-flex justify-content-md-around flex-column flex-md-row align-items-center">
-            <button className=" m-4 shadow btn btn-dark">Compra online</button>
-            <Link to="/contact-a-consultant" className=" m-4 fontOpSa shadow btn btn-danger">Contactar consultora</Link>
-            <button className=" m-4 shadow btn btn-outline-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
+            <button className=" m-4 shadow btn-width btn btn-dark">Compra online</button>
+            <Link to="/contact-a-consultant" className=" m-4 btn-width shadow btn btn-danger">Contactar consultora</Link>
+            <button className=" m-4 shadow btn-width btn btn-outline-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
           </div>
         </div>
         <div>
