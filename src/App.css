@@ -9,6 +9,23 @@
   backface-visibility: hidden;
 }
 
+p, span, button, input, .fontOpSa {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; 
+} 
+
+.fontOpSa {
+  font-weight: normal;
+}
+
+button, .fontOpSa {
+  width: 230px;
+}
+
+.bg-grey {
+  background-color: rgb(219, 219, 219);
+}
+
 .icon {
   font-size: 160%;
 }
@@ -23,6 +40,7 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .fontBhiso{
   font-family: "Caveat";
   font-size: 1.3em;
