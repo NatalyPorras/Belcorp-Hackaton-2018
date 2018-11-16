@@ -29,17 +29,17 @@ class ShopList extends Component {
     return (
       <Fragment>
         <Header itemsCount={orderList.length} />
-        <div className="container-fluid">
-          <div className="row ml-md-4 mr-md-4 p-0">
-            <div className="col-md-8 ml-md-3 p-0">
+        <div className="container-fluid p-0">
+          <div className="row p-0 m-0">
+            <div className="col-md-8 p-0">
               {
                 orderList.length ?
                   orderList.map(({ title, consultantPrice, webPrice, count, img, id }, i) =>
-                    <div className="d-flex justify-content-between p-3" key={i}>
+                    <div className="d-flex justify-content-center p-3" key={i}>
                       <img className="align-self-center image mr-3" src={img} height="120px" alt={title} />
-                      <div className="">
+                      <div className="d-flex flex-column content">
                         <h5 className="mt-0">{title}</h5>
-                        <div className="d-flex flex-direction-column text-center fontBold">
+                        <div className="d-flex text-center fontBold">
                           <p className="border-right border-dark mr-3 pr-3">
                             {webPrice}
                             <br />
@@ -55,7 +55,7 @@ class ShopList extends Component {
                             a consultora
                           </p>
                         </div>
-                        <div className="mt-0">
+                        <div className="mt-0 align-self-center">
                           <i className="fas fa-minus border p-2" onClick={() => reduceCount(title, i)}></i>
                           <span className="p-2">{count}</span>
                           <i className="fas fa-plus border p-2" onClick={() => addCount(id)}></i>
@@ -67,7 +67,7 @@ class ShopList extends Component {
                   : <h1 className="p-md-3 mt-2 mb-2 mt-md-0 mb-md-0 mb-0 p-2 fontBhiso size">Empieza a añadir artículos a tu bolsa</h1>
               }
             </div>
-            <div className="d-md-flex flex-md-column bg-conditionel col-md-3 p-0">
+            <div className="d-md-flex flex-md-column bg-conditionel justify-content-center col-md-4 p-0">
               <div className=" fontBold d-flex justify-content-between align-items-center bg-grey p-2 pr-4 pl-4 p-md-3 mt-3 mb-2 m-md-0">
                 <span>Total Online </span> <span className="">S/ {total}</span>
               </div>
@@ -77,7 +77,7 @@ class ShopList extends Component {
                   <div className="d-flex flex-column justify-content-sm-around flex-sm-row flex-md-column align-items-center">
                     <button className=" m-4 shadow btn-width btn btn-dark">Compra online</button>
                     <Link to="/contact-a-consultant" className=" m-4 btn-width shadow btn btn-danger">Contactar consultora</Link>
-                    <button className=" m-4 shadow btn-width btn btn-outline-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
+                    <button className=" m-4 shadow btn-width btn btn-light border border-dark" onClick={this.handleStoresBelcorp}>Buscar en tienda</button>
                   </div>
                   // </div>
                   : null
