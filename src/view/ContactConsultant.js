@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Header from './Header';
 import Brocha from '../assets/img/brocha.jpg';
 import Deco from '../assets/img/brocha-polvos-maquillaje.jpg';
+import MapConsultant from '../component/MapConsultant'
 
 // const Consultant = ({ consultantInfo }) => {
 //   console.log(consultantInfo)
@@ -61,44 +62,6 @@ class ContactConsultant extends Component {
     this.setState({
       consultantCode: value,
     })
-  }
-
-  handleMap = (googleMap, consultants) => {
-    const createMarker = (consultant) => {
-      // Creamos un marcador
-      const marker = new google.maps.Marker({
-        map: map,
-        position: consultant.coordinates
-      });
-
-      // Asignamos el evento click del marcador
-      google.maps.event.addListener(marker, 'click', () => {
-        infowindow.setContent(consultant.name);
-        infowindow.open(map);
-      });
-    }
-
-    let map;
-    let infowindow;
-
-    // Creamos un mapa con las coordenadas actuales
-    navigator.geolocation.getCurrentPosition(pos => {
-
-      lat = pos.coords.latitude;
-      lon = pos.coords.longitude;
-
-      const myLatlng = new google.maps.LatLng(lat, lon);
-      const mapOptions = {
-        center: myLatlng,
-        zoom: 15,
-      };
-
-      map = new google.maps.Map(googleMap, mapOptions);
-
-      // Creamos el infowindow
-      infowindow = new google.maps.InfoWindow();
-      consultants.forEach(colocationMarker => createMarker(colocationMarker))
-    });
   }
 
   render() {
@@ -182,7 +145,7 @@ class ContactConsultant extends Component {
             </div>
             <div id="collapseTwo" aria-expanded="true" className="collapse in">
               <div>
-                <div className="img-fluid" id="google-map">{this.handleMap(document.getElementById('google-map'), this.state.consultants)}</div>
+                <MapConsultant />
                 <p className="mt-3 mb-3">Estas son las consultoras que se encuentran más cerca a ti. Selecciona una:</p>
                 <div className="list-group">
                   {this.state.consultants.map(({ code, name, phoneNumber, email }, i) => {
