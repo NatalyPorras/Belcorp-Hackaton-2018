@@ -74,7 +74,7 @@ class Esika extends Component {
                                 data-dismiss="modal"
                                 aria-label="Close"
                                 type="button"
-                                className="btn btn-dark"
+                                className="btn btn-dark btn-width"
                                 onClick={() => this.props.addItem({
                                   title: obj.name,
                                   img: obj.image,

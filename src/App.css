@@ -9,6 +9,26 @@
   backface-visibility: hidden;
 }
 
+p, span, button, input, a {
+  font-family: 'Open Sans', sans-serif;
+} 
+
+.btn-width {
+  width: 230px;
+}
+
+.fontBold {
+  font-weight: 600;
+}
+
+.content {
+  width: 50vw;
+}
+
+.bg-grey {
+  background-color: rgb(219, 219, 219);
+}
+
 .icon {
   font-size: 160%;
 }
@@ -23,13 +43,14 @@
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 .fontBhiso{
   font-family: "Caveat";
   font-size: 1.3em;
 }
 
 .size {
- font-size: 1.8em;
+ font-size: 1.9em;
 }
 
 .card:hover .overlay {
@@ -46,4 +67,14 @@ input[type=number]::-webkit-outer-spin-button {
   -moz-appearance: none;
   appearance: none;
   margin: 0; 
+}
+
+.btn-outline-dark:hover {
+  color: black; 
+}
+
+@media screen and (min-width: 768px ) {
+  .bg-conditionel {
+    background-color: rgb(219, 219, 219);
+  }
 }
