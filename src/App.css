@@ -54,7 +54,7 @@ p, span, button, input, a {
 }
 
 .card:hover .overlay {
-  opacity: 0;
+  opacity: 0.18;
 }
 
 .card:hover .mask {

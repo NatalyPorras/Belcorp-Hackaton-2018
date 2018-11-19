@@ -7,8 +7,8 @@ const Card = ({ title, link, image, logo, slogan }) => {
       <div className="card mt-4">
         <img className="overlay card-img-top" src={image} alt={`Portada de catálogo de ${title}`} />
         <div className="mask">
-          <img src={logo} alt={`Logo de ${title}`} />
-          <p className="fontBhiso">{slogan}</p>
+          <img src={logo} className="img-fluid" alt={`Logo de ${title}`} />
+          <p className="fontBhiso mt-3">{slogan}</p>
           <Link to={`/${link}`} className={`btn btn-primary`}>Ver catálogo</Link>
         </div>
       </div>
