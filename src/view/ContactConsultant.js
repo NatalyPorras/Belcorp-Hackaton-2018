@@ -20,8 +20,8 @@ class ContactConsultant extends Component {
           phoneNumber: 980671333,
           email: 'ailim.moscoso@gmail.com',
           coordinates: {
-            lat: -12.1369698,
-            lng: -77.0224273
+            lat: -12.0964749,
+            lng: -77.0408897
           }
         },
         {
@@ -30,8 +30,8 @@ class ContactConsultant extends Component {
           phoneNumber: 933500732,
           email: 'miluska.gonzalezar@gmail.com',
           coordinates: {
-            lat: -12.1369698,
-            lng: -77.0224273
+            lat: -12.1087819,
+            lng: -77.0394884
           }
         },
         {
@@ -40,8 +40,8 @@ class ContactConsultant extends Component {
           phoneNumber: 929940441,
           email: 'mely.hidalgo.crespo@gmail.com',
           coordinates: {
-            lat: -12.1369698,
-            lng: -77.0224273
+            lat: -12.1031934,
+            lng: -77.0317268
           }
         },
         {
@@ -50,8 +50,8 @@ class ContactConsultant extends Component {
           phoneNumber: 953211790,
           email: 'natalypc27@gmail.com',
           coordinates: {
-            lat: -12.1369698,
-            lng: -77.0224273
+            lat: -12.1076761,
+            lng: -77.0408198
           }
         }
       ]
@@ -65,6 +65,7 @@ class ContactConsultant extends Component {
   }
 
   render() {
+    const { consultants, consultantCode } = this.state;
     return (
       <Fragment>
         <Header itemsCount={this.props.itemsCount} />
@@ -83,21 +84,21 @@ class ContactConsultant extends Component {
               <input onChange={this.handleChange} type="number" className="form-control" id="exampleFormControlInput1" placeholder="Ingresa su código aquí" />
             </div>
             {
-              this.state.consultantCode === "123456"
+              consultantCode === "123456"
                 ? (
                   <div className="">
                     <fieldset disabled>
                       <div className="form-group">
                         <label for="disabledTextInput">Nombre de consultora</label>
-                        <input type="text" id="disabledTextInput" className="form-control" defaultValue={this.state.consultants[0].name} />
+                        <input type="text" id="disabledTextInput" className="form-control" defaultValue={consultants[0].name} />
                       </div>
                       <div className="form-group">
                         <label for="disabledPhone">Teléfono</label>
-                        <input id="disabledPhone" className="form-control" defaultValue={this.state.consultants[0].phoneNumber} />
+                        <input id="disabledPhone" className="form-control" defaultValue={consultants[0].phoneNumber} />
                       </div>
                       <div className="form-group">
                         <label for="disabledEmail">Email</label>
-                        <input id="disabledEmail" className="form-control" defaultValue={this.state.consultants[0].email} />
+                        <input id="disabledEmail" className="form-control" defaultValue={consultants[0].email} />
                       </div>
                     </fieldset>
                     <div className="d-flex mb-3">
@@ -145,10 +146,10 @@ class ContactConsultant extends Component {
             </div>
             <div id="collapseTwo" aria-expanded="true" className="collapse in">
               <div>
-                <MapConsultant />
+                <MapConsultant consultants={consultants} />
                 <p className="mt-3 mb-3">Estas son las consultoras que se encuentran más cerca a ti. Selecciona una:</p>
                 <div className="list-group">
-                  {this.state.consultants.map(({ code, name, phoneNumber, email }, i) => {
+                  {consultants.map(({ code, name, phoneNumber, email }, i) => {
                     return (
                       <div key={i}>
                         <div className="list-group-item list-group-item-action" data-toggle="modal" data-target={`#consultant${i}`}>
@@ -162,13 +163,13 @@ class ContactConsultant extends Component {
                                   <span aria-hidden="true">&times;</span>
                                 </button>
                                 <div className="text-secondary m-4">
-                                  <p className="mb-1">Nombre de la consultora</p>
+                                  <small className="mb-1">Nombre de la consultora</small>
                                   <p className="mb-2">{name}</p>
-                                  <p className="mb-1">Código</p>
+                                  <small className="mb-1">Código</small>
                                   <p className="mb-2">{code}</p>
-                                  <p className="mb-1">Teléfono</p>
+                                  <small className="mb-1">Teléfono</small>
                                   <p className="mb-2">{phoneNumber}</p>
-                                  <p className="mb-1">Correo</p>
+                                  <small className="mb-1">Correo</small>
                                   <p className="mb-2">{email}</p>
                                 </div>
                                 <div className="container-fluid">

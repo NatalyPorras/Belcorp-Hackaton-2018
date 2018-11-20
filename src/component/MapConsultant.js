@@ -26,29 +26,29 @@ class MapConsultant extends Component {
   };
 
   render() {
+    const { showingInfoWindow, activeMarker, selectedPlace } = this.state;
+    const { consultants } = this.props;
 
     return (
       <CurrentLocation centerAroundCurrentLocation google={this.props.google}>
-        <Marker onClick={this.onMarkerClick} name={'current location'} />
-        <Marker
-          onClick={this.onMarkerClick}
-          title={'The marker`s title will appear as a tooltip.'}
-          name={'SOMA'}
-          position={{ lat: 37.778519, lng: -122.405640 }} />
-        <Marker
-          onClick={this.onMarkerClick}
-          name={'Dolores park'}
-          position={{ lat: 37.759703, lng: -122.428093 }} />
-        <Marker />
+        {consultants.map(consultant => {
+          return (
+          <Marker
+            key={consultant.name}
+            onClick={this.onMarkerClick}
+            name={consultant.name}
+            position={consultant.coordinates} />
+          )
+        }
+          // console.log(consultant.coordinates)
+        )}
 
         <InfoWindow
-          marker={this.state.activeMarker}
-          visible={this.state.showingInfoWindow}
+          marker={activeMarker}
+          visible={showingInfoWindow}
           onClose={this.onClose}
         >
-          <div>
-            <h4>{this.state.selectedPlace.name}</h4>
-          </div>
+          <h6 className="m-0">{selectedPlace.name}</h6>
         </InfoWindow>
       </CurrentLocation>
     );

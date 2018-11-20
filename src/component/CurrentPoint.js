@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { Component, Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 const mapStyles = {
-  map: {
-    // position: 'absolute',
-    width: '60vw',
-    height: '80vh'
-  }
+  height: '70vh'
 };
-export class CurrentLocation extends React.Component {
+
+class CurrentLocation extends Component {
   constructor(props) {
     super(props);
 
@@ -101,15 +98,15 @@ export class CurrentLocation extends React.Component {
   }
 
   render() {
-    const style = Object.assign({}, mapStyles.map);
+    const style = Object.assign({}, mapStyles);
 
     return (
-      <div>
+      <Fragment>
         <div style={style} ref="map">
           Cargando map ...
         </div>
         {this.renderChildren()}
-      </div>
+      </Fragment>
     );
   }
 }
