@@ -2,7 +2,8 @@ import React, { Component, Fragment } from 'react';
 import Icon from '../assets/icon/icon.png'
 import Header from './Header'
 import './Esika.css';
-
+// import { Player } from 'video-react';
+import ReactPlayer from 'react-player'
 class Esika extends Component {
   constructor(props) {
     super(props);
@@ -104,9 +105,14 @@ class Esika extends Component {
                               obj.hasOwnProperty("video")
                               ? (<div>
                                 <hr />
+                                <h5>Tutorial</h5>
                                 <div>
-                                <video src={obj.video} autoplay poster="posterimage.jpg">
-                                </video>
+                                <ReactPlayer
+                                  url={obj.video}
+                                  className='react-player'
+                                  width='80%'
+                                  height='100%'
+                                />
                                 </div>
                               </div>) : null
                             }
