@@ -1,43 +1,20 @@
-import React,{Component} from 'react';
+import React, { Component, Fragment } from 'react';
+import Header from './Header'
+class Lbel extends Component {
 
-class Cyzone extends Component{
-    constructor(){
-        super();
-        this.state = {
-            image:[],
-            activeIndex : 1,
-            left:0
-        }
-    }
+      render() {
 
-    nextSlider = () =>{
-
-    }
-    prevSlider = () =>{
-        
-    }
-    render(){
-        return(
+    
+        return (
+          <Fragment>
+            <Header />
             <section>
-                <div>
-                    <h3>Catálogo Virtual</h3>
-                    <p>[Mira lo último]</p>
-                </div>
-                <div className="slide-wrapper"> 
-                    <div className="slider">
-                    HOLAAAA
-                    </div>
-                </div>
-                <div className="buttons">
-                    <button></button>
-                    <button></button>
-                </div>
-                <div>
-
-                </div>
-            </section>
+                <h5>¡Página en proceso de desarrollo!</h5>
+            </section >
+          </Fragment>
         )
+      }
     }
-}
-
-export default Cyzone
+    
+    export default Lbel
+    

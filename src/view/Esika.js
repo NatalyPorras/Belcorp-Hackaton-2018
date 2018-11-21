@@ -64,10 +64,26 @@ class Esika extends Component {
                               </button>
                             </div>
                             <div className="modal-body">
-                              <img src={obj.image} className="" />
-                              {/* <i className="fas fa-minus border p-2" onClick={()=>this.props.reduceCount(obj.id)}></i>
-                            <span className="p-2">{obj.count}</span>
-                            <i className="fas fa-plus border p-2" onClick={() => this.props.addCount(obj.id)}></i> */}
+                            <div>
+                              {
+                                obj.hasOwnProperty("type")
+                                ? (<div>
+                                  <p>{obj.type}</p>
+                                </div>) : null
+                              }
+                              
+                              </div>
+                              <div>
+                              {
+                                obj.hasOwnProperty("description")
+                                ? (<div>
+                                  <p>{obj.description}</p>
+                                </div>) : null
+                              }
+                              
+                              </div>
+              
+                              <img src={obj.image} className="imgModal" />
                             </div>
                             <div className="modal-footer">
                               <button
@@ -84,6 +100,16 @@ class Esika extends Component {
                                   id: obj.name
                                 })}>Agregar a Bolsa</button>
                             </div>
+                            {
+                              obj.hasOwnProperty("video")
+                              ? (<div>
+                                <hr />
+                                <div>
+                                <video src={obj.video} autoplay poster="posterimage.jpg">
+                                </video>
+                                </div>
+                              </div>) : null
+                            }
                           </div>
                         </div>
                       </div>

@@ -100,7 +100,10 @@
   .pulse-button:hover {
     animation: none;
   }
-  
+ 
+.modal-body p{
+  font-size: 12px;
+}
   @keyframes pulse {
     0% {
       -moz-transform: scale(0.9);
@@ -131,8 +134,8 @@
     padding: 0;
   }
   .modal-body img{
-    width: 330px;
-    height: 300px;;
+    width: 200px;
+    height: 200px;
   }
   .btn{
     border-radius: 0;

@@ -1,11 +1,35 @@
 import React, { Component } from 'react';
-import Mapa from '../assets/img/Captura.JPG';
 import './storesBelcorp.css'
+import MapConsultant from '../component/MapConsultant'
+
 class Stores extends Component {
     constructor(){
         super();
         this.state={
             input:"",
+            storesRetail: [
+                {
+                  name: 'ESIKA REAL PLAZA PRIMAVERA',
+                  coordinates: {
+                    lat: -12.1102146,
+                    lng: -77.0044751
+                  }
+                },
+                {
+                  name: 'ESIKA MALL DEL SUR',
+                  coordinates: {
+                    lat: -12.1542517,
+                    lng: -76.9848709
+                  }
+                },
+                {
+                  name: 'ESIKA JOCKEY PLAZA',
+                  coordinates: {
+                    lat: -12.0852769,
+                    lng: -76.9795208
+                  }
+                }
+              ]
         }
     }
 
@@ -13,44 +37,44 @@ handleInputEmail(e){
    this.setState({input:e.target.value})
 }
 
-handleClickMessage = () =>{
-    if(this.state.input !== ""){
-        window.$.ajax({
-            type: "POST",
-            url: "https://mandrillapp.com/api/1.0/messages/send.json",
-            data: {
-              'key': 'ZGiSDAUGJIgaCMIqm9ysPA',
-              'message': {
-                "html": "<p>Example HTML content</p>",
-                "text": "Example text content",
-                "subject": "example subject",
-                'from_email': 'nat@laboratoria.la',
-                'to': [
-                  {
-                    'email': 'natalypc27@gmail.com ',
-                    'name': 'Nataly Porras',
-                    'type': 'to'
-                  }
-                ],
-                "images": [
-                  {
-                      "type": "image/png",
-                      "name": "IMAGECID",
-                      "content": "ZXhhbXBsZSBmaWxl"
-                  }
-              ],
-                'subject': 'Lista de Pedidos',
-                'html': '<h2>Hola Nataly</h2>',
-                'text': 'Te enviamos una lista con los productos que seleccionase para la compra.   ',
-                'html': '<ul><ol>Revisa el detalle de tu compra.</ol><ol>Finalizala ingresando al enlace de ecommerce que te enviamos</ol></ul>'        
-              }
-            }
-          });
-    }else{
-        alert("Agrega un correo porfavor")
-    }
-    this.setState({input:""})
-}
+// handleClickMessage = () =>{
+//     if(this.state.input !== ""){
+//         window.$.ajax({
+//             type: "POST",
+//             url: "https://mandrillapp.com/api/1.0/messages/send.json",
+//             data: {
+//               'key': 'ZGiSDAUGJIgaCMIqm9ysPA',
+//               'message': {
+//                 "html": "<p>Example HTML content</p>",
+//                 "text": "Example text content",
+//                 "subject": "example subject",
+//                 'from_email': 'nat@laboratoria.la',
+//                 'to': [
+//                   {
+//                     'email': 'natalypc27@gmail.com ',
+//                     'name': 'Nataly Porras',
+//                     'type': 'to'
+//                   }
+//                 ],
+//                 "images": [
+//                   {
+//                       "type": "image/png",
+//                       "name": "IMAGECID",
+//                       "content": "ZXhhbXBsZSBmaWxl"
+//                   }
+//               ],
+//                 'subject': 'Lista de Pedidos',
+//                 'html': '<h2>Hola Nataly</h2>',
+//                 'text': 'Te enviamos una lista con los productos que seleccionase para la compra.   ',
+//                 'html': '<ul><ol>Revisa el detalle de tu compra.</ol><ol>Finalizala ingresando al enlace de ecommerce que te enviamos</ol></ul>'        
+//               }
+//             }
+//           });
+//     }else{
+//         alert("Agrega un correo porfavor")
+//     }
+//     this.setState({input:""})
+// }
     render(){
         return(
             <section>  
@@ -67,7 +91,7 @@ handleClickMessage = () =>{
                         </select>
                     </div>
                     <div>
-                        <img src={Mapa} style={{width:"400px",height:"400px"}} />
+                    <MapConsultant consultants={this.state.storesRetail} />
                     </div>
                     <div className="primeraTienda">
                         <h3>ESIKA REAL PLAZA PRIMAVERA</h3>
