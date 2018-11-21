@@ -2,16 +2,16 @@ import React, { Fragment } from 'react';
 import esikaLogo from '../assets/img/esikaLogo.PNG';
 import lbelLogo from '../assets/img/lbelLogo.PNG';
 import cyzoneLogo from '../assets/img/cyzoneLogo.PNG';
-import Header from './Header'
+import Header from './Header';
 import MainCard from '../component/MainCard';
-import Icon from '../assets/icon/icon.png'
+import Icon from '../assets/icon/icon.png';
 
 const Home = ({ data: { lbel, esika, cyzone }, itemsCount }) => {
   return (
     <Fragment>
       <Header itemsCount={itemsCount} />
-      <div className="container mt-4">
-        <div className="card-deck">
+      <div className="container pr-sm-4 pl-sm-4 pb-4">
+        <div className="row p-0 justify-content-center">
           <MainCard title="ésika" image={esika.cover} link="esika" logo={esikaLogo} slogan="Tú y tu belleza lo pueden todo." />
           <MainCard title="L'BEL" image={lbel.cover} link="lbel" logo={lbelLogo} slogan="Belleza de verdad para mujeres de verdad." />
           <MainCard title="Cyzone" image={cyzone.cover} link="cyzone" logo={cyzoneLogo} slogan="Atrévete con actitud." />
@@ -26,7 +26,7 @@ const Home = ({ data: { lbel, esika, cyzone }, itemsCount }) => {
           <p className="p-2 m-0 fontLi">Haz clic en el <span className="fontBhiso"><b> botón interactivo</b></span> para ver detalle</p>
         </div>
         <div className="d-flex align-items-center m-1">
-          <img className="p-2 " height="45px" width="45px" src={Icon} alt="Bolsa"></img>
+          <img className="p-2" height="40px" width="40px" src={Icon} alt="Bolsa"></img>
           <p className="p-2 m-0 fontLi">Agrega los productos a tu <span className="fontBhiso"><b>bolsa</b></span></p>
         </div>
         <div className="d-flex align-items-center m-1">
