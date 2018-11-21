@@ -373,7 +373,8 @@
               "z-index": 2
             },
             "name": "Labial Hidracolor Mate",
-            "image": "https://http2.mlstatic.com/labiales-mate-esika-D_NQ_NP_612234-MPE27709436011_072018-F.jpg",
+            "description": "Labial Líquido hidratante mate 6 ml / ,21 fl.oz",
+            "image": "https://user-images.githubusercontent.com/38477300/48809163-822c1280-ecf1-11e8-92eb-a521412a7055.png",
             "webPrice": "S/ 35.90",
             "consultantPrice": "S/ 30.90",
             "regularPrice": "S/ 45.00",
@@ -391,7 +392,8 @@
               "z-index": 2
             },
             "name": "Perfume INSPIRA",
-            "image": "https://tiendastreborstore.com/eshops/wp-content/uploads/2017/07/esika-fragancia-inspira-pack.jpg",
+            "image": "https://user-images.githubusercontent.com/38477300/48809209-b0a9ed80-ecf1-11e8-848b-e94566a6cb1e.png",
+            "description": "Eau de parfum atomiseur 50 ml / 1.7 fl.oz.E",
             "webPrice": "S/ 104.90",
             "consultantPrice": "S/ 89.90",
             "regularPrice": "S/ 132.00",
@@ -409,6 +411,7 @@
               "z-index": 2
             },
             "name": "Máscara hd Divina",
+            "description": "Máscara de pestañas color intenso y volumen 8 g / ,28 oz.",
             "image": "https://myostoregt.com/image/cache/catalog/hd-divina-esika-800x800.jpg",
             "webPrice": "S/ 35.90",
             "consultantPrice": "S/ 30.90",
@@ -433,7 +436,9 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "Doceteto de sombras hd MINERAL NUDE",
+            "name": "Doceteto de sombras hd",
+            "type": "MINERAL NUDE",
+            "description": "Doceteto de sombras en alta definición 7g / 0.24 oz.",
             "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/doceto_de_sombras_hd_mineral_nude1_1800x1800.jpg?v=1539268415",
             "webPrice": "S/ 54.90",
             "consultantPrice": "S/ 55.90",
@@ -451,7 +456,9 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "Doceteto de sombras hd COLOR BOLD",
+            "name": "Doceteto de sombras hd",
+            "type": "COLOR BOLD",
+            "description": "Doceteto de sombras en alta definición 7g / 0.24 oz.",
             "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/200092348_productPicture_prodGallery_superZoom_1800x1800.jpg?v=1539268415",
             "webPrice": "S/ 54.90",
             "consultantPrice": "S/ 55.90",
@@ -470,8 +477,9 @@
               "z-index": 2
             },
             "name": "Brocha para Ojos",
+            "description": "Brocha profesional dual para ojos.",
             "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/hc0/he3/8910541094942/210086023_productCategoryImage_prodCategory_product",
-            "webPrice": "S/ 28.00",
+            "webPrice": "S/ 21.90",
             "consultantPrice": "S/ 17.90",
             "regularPrice": "S/ 28.00",
             "count": 1
@@ -487,7 +495,9 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "doceteto de sombras hd chic nude",
+            "name": "doceteto de sombras hd",
+            "type": "Chic nude",
+            "description": "Doceteto de sombras en alta definición 7g / 0.24 oz.",
             "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/doceto_de_sombras_hd_chic_nude_1800x1800.jpg?v=1539268415",
             "webPrice": "S/ 54.90",
             "consultantPrice": "S/ 55.90",
@@ -584,8 +594,8 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "cadena pulsera",
-            "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/hf3/h37/9006786707486/210086632_productCategoryImage_prodCategory_product",
+            "name": "pulsera clover rosé",
+            "image": "https://user-images.githubusercontent.com/38477300/48809088-32e5e200-ecf1-11e8-97f4-4e6b2a7d77fe.png",
             "webPrice": "S/ 24.90",
             "consultantPrice": "S/ 24.90",
             "regularPrice": "S/ 38.00",
@@ -609,8 +619,10 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "renacer advanced limpiadora detox",
-            "image": "https://static.wixstatic.com/media/16caca_fa98358696004ef59f563dd81d7329b0~mv2.png/v1/fill/w_500,h_500,al_c,q_90/file.jpg",
+            "name": "renacer advanced",
+            "type": "limpiadora detox",
+            "description": "Crema de leche limpiadora y tonificante facial, con acción antioxidante 150ml",
+            "image": "https://user-images.githubusercontent.com/38477300/48809249-d636f700-ecf1-11e8-8cca-1cce4aa1124e.png",
             "webPrice": "S/ 32.90",
             "consultantPrice": "S/ 32.90",
             "regularPrice": "S/ 42.00",
@@ -627,8 +639,10 @@
               "height": "8.86%",
               "z-index": 2
             },
-            "name": "renacer advanced crema hidratante",
-            "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/CO_200091935_1800x1800.jpg",
+            "name": "renacer advanced",
+            "type": "crema hidratante facial",
+            "description": "Crema hidratante facial anti-polución SPF 20 45 g / 1,6 oz.",
+            "image": "https://user-images.githubusercontent.com/38477300/48809005-d1be0e80-ecf0-11e8-8511-981eee86c33e.png",
             "webPrice": "S/ 32.90",
             "consultantPrice": "S/ 32.90",
             "regularPrice": "S/ 42.00",
@@ -646,6 +660,7 @@
               "z-index": 2
             },
             "name": "renacer advanced dd cream",
+            "description": "Crema hidratante facial FPS 30 / UVA 30g / 1oz.",
             "image": "https://cdn.shopify.com/s/files/1/0009/1186/7955/products/renacer_advance_dd-claro_1800x1800.jpg?v=1539277297",
             "webPrice": "S/ 53.90",
             "consultantPrice": "S/ 53.90",
@@ -671,8 +686,9 @@
               "z-index": 2
             },
             "name": "lentes metal glam",
+            "description": "Lentes tipo aviador",
             "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/h82/h16/8934116524062/210088349_productCategoryImage_prodCategory_product",
-            "webPrice": "S/ 69.90",
+            "webPrice": "S/ 80.00",
             "consultantPrice": "S/ 59.90",
             "regularPrice": "S/ 100.00",
             "count": 1
@@ -691,8 +707,8 @@
             "name": "reloj minimal vitral",
             "image": "https://belcorp-store-prd.s3.amazonaws.com/sys-master/s3medias/h82/h16/8934116524062/210088349_productCategoryImage_prodCategory_product",
             "webPrice": "S/ 169.90",
-            "consultantPrice": "S/ 230.00",
-            "regularPrice": "S/ 169.90",
+            "consultantPrice": "S/ 190.90",
+            "regularPrice": "S/ 230.00",
             "count": 1
           }
         ]
