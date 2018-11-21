@@ -1,9 +1,9 @@
 {
-  "main.css": "/Belcorp-Hackaton-2018/static/css/main.6653b9f2.chunk.css",
-  "main.js": "/Belcorp-Hackaton-2018/static/js/main.b2727d8d.chunk.js",
-  "main.js.map": "/Belcorp-Hackaton-2018/static/js/main.b2727d8d.chunk.js.map",
-  "static/js/1.5a46d109.chunk.js": "/Belcorp-Hackaton-2018/static/js/1.5a46d109.chunk.js",
-  "static/js/1.5a46d109.chunk.js.map": "/Belcorp-Hackaton-2018/static/js/1.5a46d109.chunk.js.map",
+  "main.css": "/Belcorp-Hackaton-2018/static/css/main.1eb23231.chunk.css",
+  "main.js": "/Belcorp-Hackaton-2018/static/js/main.b445ec67.chunk.js",
+  "main.js.map": "/Belcorp-Hackaton-2018/static/js/main.b445ec67.chunk.js.map",
+  "static/js/1.c288df4f.chunk.js": "/Belcorp-Hackaton-2018/static/js/1.c288df4f.chunk.js",
+  "static/js/1.c288df4f.chunk.js.map": "/Belcorp-Hackaton-2018/static/js/1.c288df4f.chunk.js.map",
   "runtime~main.js": "/Belcorp-Hackaton-2018/static/js/runtime~main.081d556f.js",
   "runtime~main.js.map": "/Belcorp-Hackaton-2018/static/js/runtime~main.081d556f.js.map",
   "static/media/brocha-polvos-maquillaje.jpg": "/Belcorp-Hackaton-2018/static/media/brocha-polvos-maquillaje.c11628a8.jpg",
@@ -11,8 +11,8 @@
   "static/media/cyzoneLogo.PNG": "/Belcorp-Hackaton-2018/static/media/cyzoneLogo.8fe6271c.PNG",
   "static/media/brocha.jpg": "/Belcorp-Hackaton-2018/static/media/brocha.4f4611e8.jpg",
   "static/media/esikaLogo.PNG": "/Belcorp-Hackaton-2018/static/media/esikaLogo.16241de4.PNG",
-  "static/css/main.6653b9f2.chunk.css.map": "/Belcorp-Hackaton-2018/static/css/main.6653b9f2.chunk.css.map",
+  "static/css/main.1eb23231.chunk.css.map": "/Belcorp-Hackaton-2018/static/css/main.1eb23231.chunk.css.map",
   "index.html": "/Belcorp-Hackaton-2018/index.html",
-  "precache-manifest.92ffc0b85d6f9c2b3849d4c528a740d0.js": "/Belcorp-Hackaton-2018/precache-manifest.92ffc0b85d6f9c2b3849d4c528a740d0.js",
+  "precache-manifest.189985662741f5870b5c065abafd8a63.js": "/Belcorp-Hackaton-2018/precache-manifest.189985662741f5870b5c065abafd8a63.js",
   "service-worker.js": "/Belcorp-Hackaton-2018/service-worker.js"
 }
