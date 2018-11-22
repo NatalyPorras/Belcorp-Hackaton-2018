@@ -82,7 +82,7 @@ class App extends Component {
       <Router>
         <Switch>
           <Route
-            path='/Belcorp-Hackaton-2018'
+            path='/'
             exact
             render={() => <Home data={this.state.brands} />}
           />
